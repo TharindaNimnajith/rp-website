@@ -1,972 +1,1164 @@
 <html>
-	<head>
-		<title>PromoPal</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script>
-			function showLit(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("LitBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function litOK(){
-				dlgHide();
-			}
-			function dlgHide(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("LitBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showRgap(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("RgapBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 500/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function rgapOK(){
-				dlgHide1();
-			}
-			function dlgHide1(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("RgapBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showProb(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("RprobBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function ProbOK(){
-				dlgHide2();
-			}
-			function dlgHide2(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("RprobBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showProb(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("RprobBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function ObjOK(){
-				dlgHide3();
-			}
-			function dlgHide3(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("ObjBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showObj(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("ObjBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function MethOK(){
-				dlgHide4();
-			}
-			function dlgHide4(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("MethBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showMethodology(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("MethBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function TechOK(){
-				dlgHide5();
-			}
-			function dlgHide5(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("TechBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showTech(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("TechBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 500/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function ProposalOK(){
-				dlgHide6();
-			}
-			function dlgHide6(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("milestoneproposalBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showProposal(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("milestoneproposalBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function srsOK(){
-				dlgHide7();
-			}
-			function dlgHide7(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("milestonesrsBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showSrs(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("milestonesrsBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function progress1OK(){
-				dlgHide8();
-			}
-			function dlgHide8(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("progressBox1");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showprogress1(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("progressBox1");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function progress2OK(){
-				dlgHide9();
-			}
-			function dlgHide9(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("progressBox2");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showprogress2(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("progressBox2");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
-			function finalOK(){
-				dlgHide10();
-			}
-			function dlgHide10(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("finalBox");
-				whitebg.style.display = "none";
-				dlg.style.display = "none";
-			}
-			function showFinal(){
-				var whitebg = document.getElementById("white-background");
-				var dlg = document.getElementById("finalBox");
-				whitebg.style.display = "block";
-				dlg.style.display = "block";
-				var winWidth = window.innerWidth;
-				dlg.style.left = (winWidth/2) - 800/2 + "px";
-				dlg.style.top = "150px";
-			}
+<head>
+  <title>PromoPal</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function showLit() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("LitBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
 
-		</script>
-	</head>
-	<body>
-		<!---NavigationBar--->
-		<section id="nav-bar">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="#">PromoPal</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">HOME</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#domain">DOMAIN</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#milestone">MILESTONES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#documant">DOCUMANTS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#presentation">PRESENTATIONS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#team">ABOUT US</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">CONTACT US</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</section>
-		
-		<!--slider-->
-		<section>
-			<div id="slider">
-				<div id="headerslider" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#headerslider" data-slide-to="0" class="active"></li>
-						<li data-target="#headerslider" data-slide-to="1"></li>
-						<li data-target="#headerslider" data-slide-to="2"></li>
-					</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="img/Promopal_back_01.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<!--Caption-->
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="img/shopping6.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption">
-							<!--Caption-->
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="img/back_01.jpg" class="d-block w-100" alt="...">
-						<div class="carousel-caption">
-							<!--Caption-->
-						</div>
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-				</div>
-			</div>
-		</section>
-		
-		<!--Domain-->
-		<section id="domain">
-			<div class="container">
-				<h1>Domain</h1>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-						<figure>
-							<img src="img/Literature-Reviews.jpg" class="img-responsive">
-							<figcaption>
-								<h2>Literature Survey</h2>
-								<p>We did a background search on the domain.</p><br>
-								<button onclick="showLit()" class="buttonlearn button2">Learn More..!</button>
-							</figcaption>
-						</figure>
-					</div>
-					<div id="white-background">
-					</div>
-					<div id="LitBox">
-						<div id="dlg-header">Literature Review</div>
-						<div id="dlg-body"> 
-						In year 2018 Mohit M.Kanfade, Sukriya D.Ambade, Amol P Bhagat published a 
-						research paper called “Location Based Notification System” [1]. 
-						They have proposed a system for an android mobile application which can serve location based services. 
-						According to their research the proposed system was consist of functionalities for location reminder and 
-						friendly suggestions and system registered shops’ offer notifications. And also there is a admin panel. 
-						By using that admin can log into the system and can add and delete shops. shop manager is able to add offers 
-						on a panel. can  As the methodology of their research they have used GPS and LBS to track users. They havent mention the 
-						way that their published the offers to their mobile application. In future they will going to improve the system. As the future 
-						improvements they will include following applications in their mobile application: vehicle tracking system , billing system , weather forecasting , 
-						use of e-card through mobile no , Tracking the user path , Emergency services , and automatic toll/parking.    
-						<br><br>
-						In year 2018 Wei Jie Phua , Malcolm Yoke Hean Low , Neelakantam venkatarayalu and jared Koh published a research paper 
-						called “[2]”. They proposed efficient patient discharge workflow to hospitals. In typical hospital environment patient 
-						discharge process is time consuming. Because of that this leads to long waiting time for patients and also their will be a queue 
-						to assign patients to a bed. They did a research to solve that problem. They tried to minimize turnaround time upon discharge of a patient.
-						They proposed NFC based system to achieve their goal.They developed Android-based mobile application. This mobile application is used for both 
-						nurses and housekeepers. One of the key functionality of the mobile application is send notifications. Notification service is automated. To send 
-						notifications they used Telegram Bot API. When the patient leaves the hospital notification will send to housekeepers through the system. That notification 
-						include cleaning request and viewing of bed status. And also after cleaning of the bed it informs admissions office. According to this system instead of 
-						using discharge slip use NFC tags. Nurse assign the NFC tag to discharging patient. Instead of using deposit basket at the nurse counter uses NFC card reader 
-						to read NFC tags which are assigned to the discharge patients. Mainly they used NFC tag reader and it is connected to the Raspberry Pi and internet access is 
-						needed. That system needs low cost and can be easily deployed.
-						<br><br>
-						In year 2017 Prasanta Saikia and James she published a research paper on “Effective mobile notification Recommendation using Social 
-						nature of Locations” [3].  They proposed a mobile notification recommendation system which is location based service. They proposed a news 
-						recommendation method. It collects user preferences for different news categories at different locations. They group locations by analyzing 
-						two location grouping methods such as manual and other is based on similarities. They identified types of a location using GPS geolocation data.  
-						They mention as their future works determining the optimal number of localities without having to evaluate the optimization model for each location 
-						grouping method would be studied.
-						<br>
-						<br>
-						In year 2015 Takaaki Tsunoda proposed a novel task for utilizing  review analysis to suggest product advertisement improvements [4]. They use the review analysis technique. By using review analysis technique they determine which aspects can be included in a blurb of the product.  show aspect candidates that could be incorporated into the blurb ordered by their importance to users for a given product is the goal of their task. As the review analysis technique they break their task into two sub tasks. aspect grouping and aspect group ranking. They assigning aspect expressions to aspect groups to manage aspects at the semantic level.  They next score aspect groups to suggest only important aspect groups. For the aspect grouping they used one of the semi-supervised learnig methods. Those methods are  described by zhai et al in year 2010. For the aspect group ranking they used aspect ranking method. That method proposed by lnui et al in year 2013.
-						<br><br>
-						In year 2018 Y.Gopi , Varikallu Sumalatha published a research about Tele comm. Customer data analysis using Multi-Layer clustering model [5]. They are main goal is to verify the high homogeneity of individual clusters, and also the high degree of unsimilarity among individuals, given the appropriate segments. They are first collecting and segmenting individual customer’s contributions , personal preferences, overall customer profile and other factors.  They used data mining technology and two layer clustering model in their research. Marketers can use pre-analysis and data mining to target their customers and also marketers can  sell the company’s products and services with accurate marketing. As they use two layer clustering model there are two layers. The first layer examines customer value. And the second layer uses customer behaviour features. The second layer is used for further grouping. The two layer customer model that they are proposed provides a macro and micro perspective to assist mobile CRM.  
-						<br><br>
-						In year 2015 can yang , zhiye chen , Tianyi wang and pengfei sun published a research on sentiment analysis of customer reviews based on the ontology of phone [6].  They developed FOBPRM (Feature Ontology Based Product Review Miner) system. They extract and summarize customer reviews on products.  This process is ontology based. The proposed system has three parts. Firstly all the data containing reviews must be pre-processing. Then after use lexicon to enrich the computing term special degree and similarity to construct an ontology tree. Next method of information entropy used. That is used to select high correlation feature-sentiment pairs and compute their polarity. That is compute by using frequency. Finally summary will be an output. This summary contain feature and sentiment.
-						<br><br>
-						In year 2011 Abhijit Raorane & R.V. Kulkarni published a research on “Data mining Techniques : A Source for consumer Behaviour Analysis” [7].  Their main objective is to know consumer behaviour. They study why person wants to buy a certain product at the time of he purchasing a product.  They use data mining as a technology to analyze consumer’s behaviour. First they choosing an organization to test and do their experiments. After they collect data from different organizations they searches various methodologies and algorithms to analyze consumer’s behaviour. Then after they decided to use association rule for checking association between the several products which are brought by the consumer’s.        
-						<br><br>
-						The patent on “System and method for providing recommendation of goods or services based on recorded purchasing history”[8] is developed on how to goods and service are recommended utilizing distributed network for potential customers selection based on past purchase history.They provide recommendation of goods and services according to customer interest based on customer profile and personal information such as age,profession, gender,etc… when creating user profile.This invention allows customer a distributed network to obtain recommendations  of goods and services that may be interest of user by reducing the inputs from user compared to prior systems.Instead of relying in personal information by user for recommendations this system user history database to determine the recommendation.
-						<br><br>
-						In this paper(“Mobile Advertising : Does Location-Based Advertising Work?”)[9] we examine consumer reactions to different advertising strategies (Location based versus location independent) advertising using the mobile phone as new platform to omit the barriers between user and business offerings by getting closer to particular shop.Even Though such advertising is convincing it also can be identified as unwanted.This paper examines effectiveness of such through an experiment which manipulate the locations.These finding are discussed in form of how,when and where to advertise using mobile phone. We explore the conflict between convenience and intrusiveness which may create a dilemma about how to react. We examine the moderating impact of location type and contextual type.
-						<br><br>
-						We report an experimental study to decide these location based advertising influence the effectiveness of these strategies in getting user response to the promotional offer. The responses are discussed as effects of such advertising strategies usefulness. 
-						<br><br>
-						In 2008 Ankur Gupta and Rajni Jindal conducted a study regarding ranking algorithms in search engines [10]. The aim of this study was to provide an overview of different work done in this field. In this study, they have identified the need for ranking algorithms and they have presented a survey conducted on major ranking algorithms used in search engines. In this paper, mainly their focus was to explore how search engines prioritize results relevant to the user when using different algorithms. PageRank, Hubs and Authorities, Hilltop, Query sensitive page ranking are few of the algorithms they have touched upon. Also, they have provided an overview of algorithms that have built by modifying the PageRank algorithm which is used by the Google search engine. In this study, they have identified in terms of speed and memory requirements PageRank algorithms is the most efficient. Also, they have identified that when using personalized ranking algorithms there is a trade-off between efficiency and making results more relative to user preferences.
-						<br><br>
-						In 2006 Eugene Agichtein, Eric Brill and Susan Dumais published a conference paper on “Improving web search ranking by incorporating user behaviour information” [11]. In this article, they have shown how Implicit feedback (User actions when interacting with the search engine) affect the ordering of the search results. They have used 2 approaches when cooperating user behaviour into ranking algorithm. First, they studied the ranking when implicit feedback is used separately. Then implicit feedback integrated with the ranking algorithm. They have used a model called “implicit user feedback model” to obtain noisy user interaction from a web search engine as vector features to use with the ranking algorithm. For this study, they have used over 12 million user interactions. In conclusion, they have shown that there was a 31% improvement in the final ranking when user behaviour is considered.
-						<br><br>
-						“Personalized Search Based on User Search Histories” conference paper is authored by Mirco Speretta and Susan Gauch [12]. They have studied how user data such as user profile and user interests can be used to improve personalized search results. Furthermore, they have examined different ways to gather user data. As a result, they have implemented a wrapper called GoogleWrapper. Which can implicitly create user profiles by using user search queries, search results and click data through a search engine. From this study, they were able to prove that the information that is readily available to search engines are sufficient for improve personalized searching and also the use of users’ data in search will improve the rankings.
-						<br><br>
-						<h3>References</h3>
-						[1] Kanfade, M., Ambade, S. and Bhagar, A. (2018). Location Based Notification System. [ebook] IEEE. Available at: https://ieeexplore.ieee.org/document/8509040 [Accessed 11 Mar. 2019].
-						<br><br>
-						[2] Wei Jie phua , Malcom yoke Hean Low , Neelakantam venkatarayalu and Jared koh , NFC-based Smart Notification system for hospital discharge process and bed management  2018. Available : https://ieeexplore.ieee.org/document/8476736
-						<br><br>
-						[3] Prasanta saikia and James she , Effective mobile notification recommendation using social nature of locations, 2017. Available : https://ieeexplore.ieee.org/document/8328547
-						<br><br>
-						[4]   Takaaki Tsunoda “utilizing review analysis to suggest product advertisement improvements” in 2015. [Online].  Available : http://www.aclweb.org/anthology/W15-2907
-						<br><br>
-						[5]   Y.Gopi and Varikallu Sumalatha “Tele comm. customer data analysis using multi-layer          clustering model” in 2018 International Journal of scientific research in computer science, Engineering and Information Technology. [Online].  Available: http://ijsrcseit.com/paper/CSEIT1831371.pdf
-						<br><br>
-						[6]  Can yang , Zhiye Chen , Tianyi Wang , Pengfei Sun “Research on sentimant analysis of customer reviews based on the ontology of phone” in 2015 International conference on Education, Management and computing Technology. [Online]. Available : https://download.atlantis-press.com/article/24153.pdf
-						<br><br>
-						[7] Abhijit Raorane & R.V.Kulkarni “Data Mining Techniques : A Source for consumer Behaviour analysis” in 2011. [Online]. Available : https://www.researchgate.net/publication/51935533_Data_Mining_Techniques_A_Source_for_Consumer_Behavior_Analysis 
-						<br><br>
-						[8]System and method for providing recommendation of goods or services based on recorded purchasing history, Available : https://patents.google.com/patent/US6782370B1/en
-						<br><br>
-						[9]Mobile Advertising : Does Location-Based Advertising Work Available: https://www.researchgate.net/publication/251334662_Mobile_Advertising_Does_Location_Based_Advertising_Work
-						<br><br>
-						[10] A. Gupta, R. Jindal. (2008). “An Overview of Ranking Algorithms for Search Engines,” in INDIACom 2nd Nat. Conf., 2008. [Online]. Available: https://bvicam.ac.in/news/INDIACom%202008%20Proceedings/pdfs/papers/281.pdf
-						<br><br>
-						[11] E. Agichtein, E. Brill, S. Dumais. (2006). “Improving Web Search Ranking by Incorporating User Behavior”.  [Online]. Available: https://www.researchgate.net/publication/238378587_Improving_Web_Search_Ranking_by_Incorporating_User_Behavior 
-						<br><br>
-						[12] M. Speretta, S. Gauch. (2005). “Personalized search based on user search histories,” Presented at IEEE/WIC/ACM Int. Conf. on Web Intelligence, 2005. [Online]. Available: https://www.researchgate.net/publication/4179917_Personalized_search_based_on_user_search_histories
-					</div>
-					<div id="dlg-footer">
-						<button onclick="litOK()">OK</button>
-					   
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-					<figure>
-						<img src="img/gap.jpg" class="img-responsive">
-						<figcaption>
-							<h2>Research Gap</h2>
-							<p>Current status and what are we going to do!</p><br>
-							<button onclick="showRgap()"class="buttonlearn button2">Learn More..!</button>
-						</figcaption>
-					</figure>
-				</div>
-				<div id="white-background">
-				</div>
-				<div id="RgapBox">
-					<div id="dlg-header">Research Gap</div>
-					<div id="dlg-body">
-						<table class="table table-hover table-bordered">
-							<tr>
-								<th>Feature</th>
-								<th>Proposed System</th>
-								<th>ODEL</th>
-								<th>Groupon.com</th>
-								<th>Webengage.com</th>
-							</tr>
-							<tr>
-								<td>Location based</td>
-								<td>Yes</td>
-								<td>Yes</td>
-								<td>No</td>
-								<td>No</td>
-							</tr>
-							<tr>
-								<td>Gather exsisting offers using public FB pages and shop's website</td>
-								<td>Yes</td>
-								<td>No</td>
-								<td>No</td>
-								<td>No</td>
-							</tr>
-							<tr>
-								<td>Prioritize offers according to customer's behaviour</td>
-								<td>Yes</td>
-								<td>No</td>
-								<td>No</td>
-								<td>No</td>
-							</tr>
-						</table>
-					</div>
-					<div id="dlg-footer">
-						<button onclick="rgapOK()">OK</button>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-					<figure>
-						<img src="img/problem.jpg" class="img-responsive">
-						<figcaption>
-							<h2>Research Problem</h2>
-							<p>Identified problem</p><br>
-							<button onclick="showProb()"class="buttonlearn button2">Learn More..!</button>
-						</figcaption>
-					</figure>
-				</div>
-		  
-		  
-				<div id="white-background">
-				</div>
-				<div id="RprobBox">
-					<div id="dlg-header">Research Problem</div>
-					<div id="dlg-body">In the present business world, there is a competition among shops and supermarkets. 
-					Due to this reason they try to give offers, promotions and discounts to attract more customers. 
-					Because of this customer face some problems when trying to find the best place to buy something. 
-					As an example, customers might have to do some research about different shops that provide the same service 
-					to find out best shop that suits them. They might have to visit the websites of each shops and read other users experience with them. 
-					When analyzing data that we gathered from a survey, more than 95% of the participants said that they would like an feature which will 
-					give them notifications about special offers when they are near a shop.</div>
-					<div id="dlg-footer">
-						<button onclick="ProbOK()">OK</button>
-					   
-					</div>
-				</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-						<figure>
-							<img src="img/Objectives.jpg" class="img-responsive">
-							<figcaption>
-								<h2>Objectives</h2>
-								<p>Our main objective and other objectives are here!</p>
-								<button onclick="showObj()"class="buttonlearn button2">Learn More..!</button>
-							</figcaption>
-						</figure>
-					</div>
-		  
-		  
-					<div id="white-background">
-					</div>
-					<div id="ObjBox">
-						<div id="dlg-header">Research Objective</div>
-						<div id="dlg-body">Use Location based offers and promotion system which notify users with offers and  promotion relevant to particular 
-						shops in shopping complex.Also search option on special offers.Statistical data charts about trending offers of merchant
-						and response of customers against the offers at the end of each month will be offered for merchants.</div>
-					<div id="dlg-footer">
-						<button onclick="ObjOK()">OK</button>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-					<figure>
-						<img src="img/methodology.jpg" class="img-responsive">
-						<figcaption>
-							<h2>Methodology</h2>
-							<p>Systematic plan of the research</p><br>
-							<button onclick="showMethodology()"class="buttonlearn button2">Learn More..!</button>
-						</figcaption>
-					</figure>
-				</div>
-		  
-		  
-		  <div id="white-background">
-				</div>
-				<div id="MethBox">
-					<div id="dlg-header">Methodology</div>
-					<div id="dlg-body">
-					<ul class="text">
-						<li>
-							Search predictions
-						<br><br>
-						The main responsibility of this functions is to provide personalized search suggestions for users by analyzing search history, purchasing patterns of this particular user and users which share similar interests.
-						Data extracted in following ways will be used to improve predictions;
-						<br><br>
-						<div>
-							<ol>
-								<li>
-									When registering, users will be provided with a small questionnaire which will help to get an idea about the interests of the user.
+    function litOK() {
+      dlgHide();
+    }
 
-								</li>
-								<li>
-									With the permission of the user, search history data will be collected and will be used with the algorithm for making search predictions.
-								</li>
-								<li>
-									Users will be given the option to share reviews and experiences with shops and products with other users.
-								</li>
-							</ol>
-						</div>
-						<br><br>
-						According to the analyzed data users will be put into target groups for each product category. When searching this will be helpful to give more personalized search result for users.
-						User feedback and ratings also will be considered when providing search results. Search results will be prioritized according to user interest as well as user feedback using ranking algorithms.
-					</li>
-					<br><br>
-					<li>
-						Offers and promotion notifier
-					<br><br>
-					The main functionality of this research component is to notify user with offers and promotion once they are near a shop in a shopping complex based on the seasons and their interest.
-					This predictor will be trained by using data extracted by following ways
-					<br><br>
-					<div>
-						<ol>
-							<li>
-								when user get registered with the app the user have to fill an form with some basic questions and some question related to their interest.
-							</li>
-							<li>
-								through user recent search history
-							</li>
-						</ol>
-					</div>
-					</li>
-					<br><br>
-					<li>
-						Filter out offers and promotions
-						<br><br>
-						The main functionality of this functions is to identify and filter out offers and promotions from merchantsâ€™ websites or public Facebook pages. 
-						Images will be identified using a tool like Web Scraper.
-						Data will be extracted from identified images by modifying existing text extraction methods with machine learning algorithms. 
-						A data model will be trained to identify offer related details from extracted data.
-					</li>
-					<br><br>
-					<li>
-					Analyze customerbehaviour
-					<br><br>
-					The main functionality of this function is to analyze customers monthly data on offers and represent those data on statistical chart. monthly data include customers behaviour / Customers interest. statistical data include trending offers , less value offers and so on. And also according to statistical data give recommendations for next month through the mobile application.   
-					Following ways are used to analyze customers behaviour
-					<br><br>
-					<div>
-						<ol>
-							<li>
-								analyzing previous search history
-							</li>
-							<li>
-								analyzing customers purchasing patterns
-							</li>
-							<li>
-								When customer register to mobile application provide small questions to identify customers interest.
-							</li>
-						</ol>
-					</div>
-					<br>
-					This will be most helpful to merchants. 
-					</li>
-						<br><br>
-					<li>
-					Review analysis
-					<br><br>
-					The main functionality of this function is to analyze customer reviews and give recommendations to merchants for improvement of the shop.
-					Review will be analyzed using suitable NLP and machine learning algorithm.
-					</li>
-					</ul>
-					</div>
-					<div id="dlg-footer">
-						<button onclick="MethOK()">OK</button>
-					   
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-					<figure>
-					<img src="img/technology.jpg" class="img-responsive">
-              
-					<figcaption>
-						<h2>Technology Used</h2>
-						<p>What are the technologies we used for demonstrate?</p><br>
-					<button onclick="showTech()"class="buttonlearn button2">Learn More..!</button>
-					</figcaption>
-					<!--/a-->
+    function dlgHide() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("LitBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
 
-			  
-					</figure>
-				</div>
-		  
-				<div id="white-background">
-				</div>
-				<div id="TechBox">
-					<div id="dlg-header">Technology Used</div>
-					<div id="dlg-body">• React Native <br>
-										• nodejs<br> 
-										• mongoDB <br>
-										• Python <br>
-										• Machine Learning <br>
-										• Deep Learning <br>
-										• Visual studio code <br>
-										• Google colabs <br>
-										</div>
-					<div id="dlg-footer">
-						<button onclick="TechOK()">OK</button>
-					   
-					</div>
-				</div>
-				</div>
-			</div>
-		</section>
-		
-		<!--Milestones-->
-		<section id="milestone">
-			<div class="container">
-				<h1>Milestones</h1>
-				<p class="text">The following steps are used to achieve the goal and the objectives of developing the PromoPal application.
-				The project will be evaluated out of 100 marks to be achieved at the end of the year.And out of the 100 marks different presentages are
-				allocated for each milestone achievement.Team has met the deadlines and produced the relevent documantations and the required presentations of the project.</p>
-				<div class="row">
-					<div class="column">
-						<p class="text">Project Proposal</p>
-						<div class="progress" style="width:100%">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:10%">
-								10%
-							</div>
-						</div>
-						<p class="text">SRS Documants</p>
-							<div class="progress" style="width:100%">
-								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:6%">
-									6%
-								</div>
-							</div>
-						<p class="text">Progress Presentation 1</p>
-						<div class="progress" style="width:100%">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:10%">
-								10%
-							</div>
-						</div>
-						<p class="text">Progress Presentation 2</p>
-						<div class="progress" style="width:100%">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:18%">
-								18%
-							</div>
-						</div>
-						<p class="text">Final Assesment</p>
-						<div class="progress" style="width:100%">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:10%">
-								10%
-							</div>
-						</div>
-						<p class="text">Viva</p>
-						<div class="progress" style="width:100%">
-							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:15%">
-								15%
-							</div>
-						</div>
-					</div>
-					<div class="column">
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title text-primary">Project Proposal Document</h5>
-								<button onclick="showProposal()" class="btn btn-primary">View Description</button>
-							</div>
-						</div>
-						<div id="white-background">
-						</div>
-						<div id="milestoneproposalBox">
-							<div id="dlg-header">Project Proposal Document</div>
-								<div id="dlg-body">
-									<p>Date of the Assesment : 2019-03-12</p>
-									Project Proposal documant is the initial documant that demarcate the initial requirements of the
-									project activities. These requirements could change over the time. Foolow up of a good project management 
-									plan is quite necessary to support the aggressive changes of the requirements. The use of methodologies and
-									PMP are described under the proposal document as well.</div>
-							<div id="dlg-footer">
-								<button onclick="ProposalOK()">OK</button>
-					   
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title text-primary">SRS Document</h5>
-								<button onclick="showSrs()" class="btn btn-primary">View Description</button>
-							</div>
-						</div>
-						<div id="milestonesrsBox">
-							<div id="dlg-header">SRS Document</div>
-								<div id="dlg-body">
-								<p>Date of the Assesment : 2019-04-22</p>
-								The purpose of this Software Requirements Specification document is to provide a detailed 
-								description of the functionalities of the proposed location-based offer notification mobile application (cross platform). 
-								Furthermore, this will explain the features, the interfaces of the system and what will be done by this component of the system.
-								The developers, users and testers could refer this document for their appropriate necessities. This document will support,  
-								<br><br>
-								<ul>
-									<li>Developers: To make sure whether they are developing the correct software requirements and specifications proposed in the previous stages. </li> 
+    function showRgap() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("RgapBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 500 / 2 + "px";
+      dlg.style.top = "150px";
+    }
 
-									<li>Testers: To get the overall idea about functionalities which will be helpful for testing purposes. </li>     
+    function rgapOK() {
+      dlgHide1();
+    }
 
-									<li>Users: To get confirm whether the mentioned, requirements are included in the software requirements and specifications. Also, 
-										this stands as a legal document between users and developers.</li>  
-								</div>
-								</ul>
-							<div id="dlg-footer">
-								<button onclick="srsOK()">OK</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title text-primary">Progress Presentation 1</h5>
-								<button onclick="showprogress1()" class="btn btn-primary">View Description</button>
-							</div>
-						</div>
-						<div id="progressBox1">
-							<div id="dlg-header">Progress Presentation 1</div>
-								<div id="dlg-body"> 
-								<p>Date of the Assesment : 2019-06-18</p>
-								In Progrees Presentation 1 we have to implement our system up to 50% of the final product.
-								It has to be a working product which can be take a better idea about the product that we are going to implement.
-								</div>
-							<div id="dlg-footer">
-								<button onclick="progress1OK()">OK</button>
-							</div>
-						</div>
-					</div>
-					<div class="column">
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title text-primary">Progress Presentation 2</h5>
-								<button onclick="showprogress2()" class="btn btn-primary">View Description</button>
-							</div>
-						</div>
-						<div id="progressBox2">
-							<div id="dlg-header">Progress Presentation 2</div>
-								<div id="dlg-body"> 
-								<p>Date of the Assesment : 2019-09-02</p>
-								In Progrees Presentation 2 we have to implement our system up to 90% of the final product.
-								It has to be a working product which can be take a better idea about the product that we are going to implement.
-								</div>
-							<div id="dlg-footer">
-								<button onclick="progress2OK()">OK</button>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h5 class="card-title text-primary">Final Assesment and Viva</h5>
-								<button onclick="showFinal()" class="btn btn-primary">View Description</button>
-							</div>
-						</div>
-						<div id="finalBox">
-							<div id="dlg-header">Final Assesment and Viva</div>
-								<div id="dlg-body"> 
-									<p>Date of the Assesment : 2019-11-13</p>
-									Final Presentation evaluates the team on results of the final product. Checks whether the proposed work has been implemented in the final product and works as a unit.
-									In the Viva presentation, the team is evaluated individually on the work they've done including the source code of the system as well as literature survey.
-								</div>
-							<div id="dlg-footer">
-								<button onclick="finalOK()">OK</button>
-							</div>
-						</div>
-					</div>					
-				</div>
-		</section>
-		<br><br><br><br>
-		<!--Documant-->
-		<section id="documant">
-			<div class="container">
-				<h1>DOCUMENTS</h1>
-				<table class="table table-hover table-bordered">
-					<tr>
-						<th>Documant Name</th>
-						<th></th>
-					</tr>
-					<tr>
-						<td>Project Charter</td>
-						<td><a href="Documants/19-081_Project charter.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>Proposal Documant</td>
-						<td><a href="Documants/19-081_Project Proposal Report.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>Group SRS Documant</td>
-						<td><a href="Documants/19-081_SRS.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>SRS Documant 1</td>
-						<td><a href="Documants/IT16113978_SRS.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>SRS Documant 2</td>
-						<td><a href="Documants/IT16139718_SRS.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>SRS Documant 3</td>
-						<td><a href="Documants/IT16139640_SRS.pdf" type="application/pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>SRS Documant 4</td>
-						<td><a href="Documants/IT16072848_SRS.pdf">View</a></td>
-					</tr>
-					<tr>
-						<td>Research Paper</td>
-						<td><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td>Final Documant 1</td>
-						<td><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td>Final Documant 2</td>
-						<td><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td>Final Documant 3</td>
-						<td><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td>Final Documant 4</td>
-						<td><a href="#">View</a></td>
-					</tr>
-					<tr>
-						<td>Final Documant (Group)</td>
-						<td><a href="#">View</a></td>
-					</tr>
-				</table>
-			</div>
-		</section>
-		
-		<!--Presentation-->
-		<section id="presentation">
-			<div class="container">
-				<h1>Presentations</h1>
-				<div class="row">
-					<div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-						<div class="card-header">PromoPal</div>
-						<div class="card-body text-primary">
-							<h5 class="card-title">Proposal Presentation</h5>
-							<div style="text-align:center">
-								<p class="card-text"><a href="presentations/Customer Tracking System.pptx" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-						<div class="card-header">PromoPal</div>
-						<div class="card-body text-primary">
-							<h5 class="card-title">Progress Presentation 1</h5>
-							<div style="text-align:center">
-								<p class="card-text"><a href="presentations/Customer Tracking System.pptx" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-						<div class="card-header">PromoPal</div>
-						<div class="card-body text-primary">
-							<h5 class="card-title">Progress Presentation2</h5>
-							<div style="text-align:center">
-								<p class="card-text"><a href="presentations/Customer Tracking System.pptx" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-						<div class="card-header">PromoPal</div>
-						<div class="card-body text-primary">
-							<h5 class="card-title">Final Presentation</h5>
-							<div style="text-align:center">
-								<p class="card-text"><a href="presentations/Customer Tracking System.pptx" download><button class="btn btn-primary"><i class="fa fa-download"></i> Download</button></a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!---about-->
-		<section id="team">
-			<div class="container">
-				<h1>Our Team</h1>
-				<div class="row">
-					<div class="col-md-3 profile-pic text-center">
-						<div class="img-box">
-							<img src="img/person_03.jpg" class="img-responsive">
-						</div>
-						<h2>Saluwadana S.M.R.B</h2>
-						<h3>Group Leader</h3>
-					</div>
-					<div class="col-md-3 profile-pic text-center">
-						<div class="img-box">
-							<img src="img/madhavi.jpeg" class="img-responsive">
-						</div>
-						<h2>Jayasinghe L.M.R</h2>
-					</div>
-					<div class="col-md-3 profile-pic text-center">
-						<div class="img-box">
-							<img src="img/neminda.jpeg" class="img-responsive">
-						</div>
-						<h2>Hemachandra K.A.N.W</h2>
-					</div>
-					<div class="col-md-3 profile-pic text-center">
-						<div class="img-box">
-							<img src="img/person_04.jpeg" class="img-responsive">
-						</div>
-						<h2>Ahnaf H.M</h2>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!---Get in Touch---->
-		<section id="contact">
-			<div class="container">
-				<h1>Get in Touch</h1>
-				<div class="row">
-					<div class="col-md-6">
-						<form class="contact-form" action="MAILTO:promopal.research@gmail.com" method="post" enctype="text/plain">
-							<div class="form-group">
-								<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
-							</div>
-							<div class="form-group">
-								<textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your Message"></textarea>
-							</div>
-							<button type="submit" name="submit" class="btn btn-primary">Submit<button>
-						</form>
-					</div>
-					<div class="col-md-6 contact-info">
-						<div class="follow">
-							<b>Email: </b>
-							<i class="fa fa-envelope-o"></i>
-							promopal.research@gmail.com
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</body>
+    function dlgHide1() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("RgapBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showProb() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("RprobBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function ProbOK() {
+      dlgHide2();
+    }
+
+    function dlgHide2() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("RprobBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showProb() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("RprobBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function ObjOK() {
+      dlgHide3();
+    }
+
+    function dlgHide3() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("ObjBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showObj() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("ObjBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function MethOK() {
+      dlgHide4();
+    }
+
+    function dlgHide4() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("MethBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showMethodology() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("MethBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function TechOK() {
+      dlgHide5();
+    }
+
+    function dlgHide5() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("TechBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showTech() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("TechBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 500 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function ProposalOK() {
+      dlgHide6();
+    }
+
+    function dlgHide6() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("milestoneproposalBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showProposal() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("milestoneproposalBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function srsOK() {
+      dlgHide7();
+    }
+
+    function dlgHide7() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("milestonesrsBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showSrs() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("milestonesrsBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function progress1OK() {
+      dlgHide8();
+    }
+
+    function dlgHide8() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("progressBox1");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showprogress1() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("progressBox1");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function progress2OK() {
+      dlgHide9();
+    }
+
+    function dlgHide9() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("progressBox2");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showprogress2() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("progressBox2");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+    function finalOK() {
+      dlgHide10();
+    }
+
+    function dlgHide10() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("finalBox");
+      whitebg.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showFinal() {
+      var whitebg = document.getElementById("white-background");
+      var dlg = document.getElementById("finalBox");
+      whitebg.style.display = "block";
+      dlg.style.display = "block";
+      var winWidth = window.innerWidth;
+      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
+      dlg.style.top = "150px";
+    }
+
+  </script>
+</head>
+<body>
+<!---NavigationBar--->
+<section id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">PromoPal</a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarNav" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#domain">DOMAIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#milestone">MILESTONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#documant">DOCUMANTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#presentation">PRESENTATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<!--slider-->
+<section>
+  <div id="slider">
+    <div class="carousel slide" data-ride="carousel" id="headerslider">
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#headerslider"></li>
+        <li data-slide-to="1" data-target="#headerslider"></li>
+        <li data-slide-to="2" data-target="#headerslider"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img alt="..." class="d-block w-100" src="img/Promopal_back_01.jpg">
+          <div class="carousel-caption d-none d-md-block">
+            <!--Caption-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img alt="..." class="d-block w-100" src="img/shopping6.jpg">
+          <div class="carousel-caption">
+            <!--Caption-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img alt="..." class="d-block w-100" src="img/back_01.jpg">
+          <div class="carousel-caption">
+            <!--Caption-->
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" data-slide="prev" href="#headerslider" role="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" data-slide="next" href="#headerslider" role="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--Domain-->
+<section id="domain">
+  <div class="container">
+    <h1>Domain</h1>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/Literature-Reviews.jpg">
+          <figcaption>
+            <h2>Literature Survey</h2>
+            <p>We did a background search on the domain.</p><br>
+            <button class="buttonlearn button2" onclick="showLit()">Learn More..!</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div id="white-background">
+      </div>
+      <div id="LitBox">
+        <div id="dlg-header">Literature Review</div>
+        <div id="dlg-body">
+          In year 2018 Mohit M.Kanfade, Sukriya D.Ambade, Amol P Bhagat published a
+          research paper called “Location Based Notification System” [1].
+          They have proposed a system for an android mobile application which can serve location based services.
+          According to their research the proposed system was consist of functionalities for location reminder and
+          friendly suggestions and system registered shops’ offer notifications. And also there is a admin panel.
+          By using that admin can log into the system and can add and delete shops. shop manager is able to add offers
+          on a panel. can As the methodology of their research they have used GPS and LBS to track users. They havent
+          mention the
+          way that their published the offers to their mobile application. In future they will going to improve the
+          system. As the future
+          improvements they will include following applications in their mobile application: vehicle tracking system ,
+          billing system , weather forecasting ,
+          use of e-card through mobile no , Tracking the user path , Emergency services , and automatic toll/parking.
+          <br><br>
+          In year 2018 Wei Jie Phua , Malcolm Yoke Hean Low , Neelakantam venkatarayalu and jared Koh published a
+          research paper
+          called “[2]”. They proposed efficient patient discharge workflow to hospitals. In typical hospital environment
+          patient
+          discharge process is time consuming. Because of that this leads to long waiting time for patients and also
+          their will be a queue
+          to assign patients to a bed. They did a research to solve that problem. They tried to minimize turnaround time
+          upon discharge of a patient.
+          They proposed NFC based system to achieve their goal.They developed Android-based mobile application. This
+          mobile application is used for both
+          nurses and housekeepers. One of the key functionality of the mobile application is send notifications.
+          Notification service is automated. To send
+          notifications they used Telegram Bot API. When the patient leaves the hospital notification will send to
+          housekeepers through the system. That notification
+          include cleaning request and viewing of bed status. And also after cleaning of the bed it informs admissions
+          office. According to this system instead of
+          using discharge slip use NFC tags. Nurse assign the NFC tag to discharging patient. Instead of using deposit
+          basket at the nurse counter uses NFC card reader
+          to read NFC tags which are assigned to the discharge patients. Mainly they used NFC tag reader and it is
+          connected to the Raspberry Pi and internet access is
+          needed. That system needs low cost and can be easily deployed.
+          <br><br>
+          In year 2017 Prasanta Saikia and James she published a research paper on “Effective mobile notification
+          Recommendation using Social
+          nature of Locations” [3]. They proposed a mobile notification recommendation system which is location based
+          service. They proposed a news
+          recommendation method. It collects user preferences for different news categories at different locations. They
+          group locations by analyzing
+          two location grouping methods such as manual and other is based on similarities. They identified types of a
+          location using GPS geolocation data.
+          They mention as their future works determining the optimal number of localities without having to evaluate the
+          optimization model for each location
+          grouping method would be studied.
+          <br>
+          <br>
+          In year 2015 Takaaki Tsunoda proposed a novel task for utilizing review analysis to suggest product
+          advertisement improvements [4]. They use the review analysis technique. By using review analysis technique
+          they determine which aspects can be included in a blurb of the product. show aspect candidates that could be
+          incorporated into the blurb ordered by their importance to users for a given product is the goal of their
+          task. As the review analysis technique they break their task into two sub tasks. aspect grouping and aspect
+          group ranking. They assigning aspect expressions to aspect groups to manage aspects at the semantic level.
+          They next score aspect groups to suggest only important aspect groups. For the aspect grouping they used one
+          of the semi-supervised learnig methods. Those methods are described by zhai et al in year 2010. For the aspect
+          group ranking they used aspect ranking method. That method proposed by lnui et al in year 2013.
+          <br><br>
+          In year 2018 Y.Gopi , Varikallu Sumalatha published a research about Tele comm. Customer data analysis using
+          Multi-Layer clustering model [5]. They are main goal is to verify the high homogeneity of individual clusters,
+          and also the high degree of unsimilarity among individuals, given the appropriate segments. They are first
+          collecting and segmenting individual customer’s contributions , personal preferences, overall customer profile
+          and other factors. They used data mining technology and two layer clustering model in their research.
+          Marketers can use pre-analysis and data mining to target their customers and also marketers can sell the
+          company’s products and services with accurate marketing. As they use two layer clustering model there are two
+          layers. The first layer examines customer value. And the second layer uses customer behaviour features. The
+          second layer is used for further grouping. The two layer customer model that they are proposed provides a
+          macro and micro perspective to assist mobile CRM.
+          <br><br>
+          In year 2015 can yang , zhiye chen , Tianyi wang and pengfei sun published a research on sentiment analysis of
+          customer reviews based on the ontology of phone [6]. They developed FOBPRM (Feature Ontology Based Product
+          Review Miner) system. They extract and summarize customer reviews on products. This process is ontology based.
+          The proposed system has three parts. Firstly all the data containing reviews must be pre-processing. Then
+          after use lexicon to enrich the computing term special degree and similarity to construct an ontology tree.
+          Next method of information entropy used. That is used to select high correlation feature-sentiment pairs and
+          compute their polarity. That is compute by using frequency. Finally summary will be an output. This summary
+          contain feature and sentiment.
+          <br><br>
+          In year 2011 Abhijit Raorane & R.V. Kulkarni published a research on “Data mining Techniques : A Source for
+          consumer Behaviour Analysis” [7]. Their main objective is to know consumer behaviour. They study why person
+          wants to buy a certain product at the time of he purchasing a product. They use data mining as a technology to
+          analyze consumer’s behaviour. First they choosing an organization to test and do their experiments. After they
+          collect data from different organizations they searches various methodologies and algorithms to analyze
+          consumer’s behaviour. Then after they decided to use association rule for checking association between the
+          several products which are brought by the consumer’s.
+          <br><br>
+          The patent on “System and method for providing recommendation of goods or services based on recorded
+          purchasing history”[8] is developed on how to goods and service are recommended utilizing distributed network
+          for potential customers selection based on past purchase history.They provide recommendation of goods and
+          services according to customer interest based on customer profile and personal information such as
+          age,profession, gender,etc… when creating user profile.This invention allows customer a distributed network to
+          obtain recommendations of goods and services that may be interest of user by reducing the inputs from user
+          compared to prior systems.Instead of relying in personal information by user for recommendations this system
+          user history database to determine the recommendation.
+          <br><br>
+          In this paper(“Mobile Advertising : Does Location-Based Advertising Work?”)[9] we examine consumer reactions
+          to different advertising strategies (Location based versus location independent) advertising using the mobile
+          phone as new platform to omit the barriers between user and business offerings by getting closer to particular
+          shop.Even Though such advertising is convincing it also can be identified as unwanted.This paper examines
+          effectiveness of such through an experiment which manipulate the locations.These finding are discussed in form
+          of how,when and where to advertise using mobile phone. We explore the conflict between convenience and
+          intrusiveness which may create a dilemma about how to react. We examine the moderating impact of location type
+          and contextual type.
+          <br><br>
+          We report an experimental study to decide these location based advertising influence the effectiveness of
+          these strategies in getting user response to the promotional offer. The responses are discussed as effects of
+          such advertising strategies usefulness.
+          <br><br>
+          In 2008 Ankur Gupta and Rajni Jindal conducted a study regarding ranking algorithms in search engines [10].
+          The aim of this study was to provide an overview of different work done in this field. In this study, they
+          have identified the need for ranking algorithms and they have presented a survey conducted on major ranking
+          algorithms used in search engines. In this paper, mainly their focus was to explore how search engines
+          prioritize results relevant to the user when using different algorithms. PageRank, Hubs and Authorities,
+          Hilltop, Query sensitive page ranking are few of the algorithms they have touched upon. Also, they have
+          provided an overview of algorithms that have built by modifying the PageRank algorithm which is used by the
+          Google search engine. In this study, they have identified in terms of speed and memory requirements PageRank
+          algorithms is the most efficient. Also, they have identified that when using personalized ranking algorithms
+          there is a trade-off between efficiency and making results more relative to user preferences.
+          <br><br>
+          In 2006 Eugene Agichtein, Eric Brill and Susan Dumais published a conference paper on “Improving web search
+          ranking by incorporating user behaviour information” [11]. In this article, they have shown how Implicit
+          feedback (User actions when interacting with the search engine) affect the ordering of the search results.
+          They have used 2 approaches when cooperating user behaviour into ranking algorithm. First, they studied the
+          ranking when implicit feedback is used separately. Then implicit feedback integrated with the ranking
+          algorithm. They have used a model called “implicit user feedback model” to obtain noisy user interaction from
+          a web search engine as vector features to use with the ranking algorithm. For this study, they have used over
+          12 million user interactions. In conclusion, they have shown that there was a 31% improvement in the final
+          ranking when user behaviour is considered.
+          <br><br>
+          “Personalized Search Based on User Search Histories” conference paper is authored by Mirco Speretta and Susan
+          Gauch [12]. They have studied how user data such as user profile and user interests can be used to improve
+          personalized search results. Furthermore, they have examined different ways to gather user data. As a result,
+          they have implemented a wrapper called GoogleWrapper. Which can implicitly create user profiles by using user
+          search queries, search results and click data through a search engine. From this study, they were able to
+          prove that the information that is readily available to search engines are sufficient for improve personalized
+          searching and also the use of users’ data in search will improve the rankings.
+          <br><br>
+          <h3>References</h3>
+          [1] Kanfade, M., Ambade, S. and Bhagar, A. (2018). Location Based Notification System. [ebook] IEEE. Available
+          at: https://ieeexplore.ieee.org/document/8509040 [Accessed 11 Mar. 2019].
+          <br><br>
+          [2] Wei Jie phua , Malcom yoke Hean Low , Neelakantam venkatarayalu and Jared koh , NFC-based Smart
+          Notification system for hospital discharge process and bed management 2018. Available :
+          https://ieeexplore.ieee.org/document/8476736
+          <br><br>
+          [3] Prasanta saikia and James she , Effective mobile notification recommendation using social nature of
+          locations, 2017. Available : https://ieeexplore.ieee.org/document/8328547
+          <br><br>
+          [4] Takaaki Tsunoda “utilizing review analysis to suggest product advertisement improvements” in 2015.
+          [Online]. Available : http://www.aclweb.org/anthology/W15-2907
+          <br><br>
+          [5] Y.Gopi and Varikallu Sumalatha “Tele comm. customer data analysis using multi-layer clustering model” in
+          2018 International Journal of scientific research in computer science, Engineering and Information Technology.
+          [Online]. Available: http://ijsrcseit.com/paper/CSEIT1831371.pdf
+          <br><br>
+          [6] Can yang , Zhiye Chen , Tianyi Wang , Pengfei Sun “Research on sentimant analysis of customer reviews
+          based on the ontology of phone” in 2015 International conference on Education, Management and computing
+          Technology. [Online]. Available : https://download.atlantis-press.com/article/24153.pdf
+          <br><br>
+          [7] Abhijit Raorane & R.V.Kulkarni “Data Mining Techniques : A Source for consumer Behaviour analysis” in
+          2011. [Online]. Available :
+          https://www.researchgate.net/publication/51935533_Data_Mining_Techniques_A_Source_for_Consumer_Behavior_Analysis
+          <br><br>
+          [8]System and method for providing recommendation of goods or services based on recorded purchasing history,
+          Available : https://patents.google.com/patent/US6782370B1/en
+          <br><br>
+          [9]Mobile Advertising : Does Location-Based Advertising Work Available:
+          https://www.researchgate.net/publication/251334662_Mobile_Advertising_Does_Location_Based_Advertising_Work
+          <br><br>
+          [10] A. Gupta, R. Jindal. (2008). “An Overview of Ranking Algorithms for Search Engines,” in INDIACom 2nd Nat.
+          Conf., 2008. [Online]. Available: https://bvicam.ac.in/news/INDIACom%202008%20Proceedings/pdfs/papers/281.pdf
+          <br><br>
+          [11] E. Agichtein, E. Brill, S. Dumais. (2006). “Improving Web Search Ranking by Incorporating User Behavior”.
+          [Online]. Available:
+          https://www.researchgate.net/publication/238378587_Improving_Web_Search_Ranking_by_Incorporating_User_Behavior
+          <br><br>
+          [12] M. Speretta, S. Gauch. (2005). “Personalized search based on user search histories,” Presented at
+          IEEE/WIC/ACM Int. Conf. on Web Intelligence, 2005. [Online]. Available:
+          https://www.researchgate.net/publication/4179917_Personalized_search_based_on_user_search_histories
+        </div>
+        <div id="dlg-footer">
+          <button onclick="litOK()">OK</button>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/gap.jpg">
+          <figcaption>
+            <h2>Research Gap</h2>
+            <p>Current status and what are we going to do!</p><br>
+            <button class="buttonlearn button2" onclick="showRgap()">Learn More..!</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div id="white-background">
+      </div>
+      <div id="RgapBox">
+        <div id="dlg-header">Research Gap</div>
+        <div id="dlg-body">
+          <table class="table table-hover table-bordered">
+            <tr>
+              <th>Feature</th>
+              <th>Proposed System</th>
+              <th>ODEL</th>
+              <th>Groupon.com</th>
+              <th>Webengage.com</th>
+            </tr>
+            <tr>
+              <td>Location based</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Gather exsisting offers using public FB pages and shop's website</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Prioritize offers according to customer's behaviour</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+          </table>
+        </div>
+        <div id="dlg-footer">
+          <button onclick="rgapOK()">OK</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/problem.jpg">
+          <figcaption>
+            <h2>Research Problem</h2>
+            <p>Identified problem</p><br>
+            <button class="buttonlearn button2" onclick="showProb()">Learn More..!</button>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <div id="white-background">
+      </div>
+      <div id="RprobBox">
+        <div id="dlg-header">Research Problem</div>
+        <div id="dlg-body">In the present business world, there is a competition among shops and supermarkets.
+          Due to this reason they try to give offers, promotions and discounts to attract more customers.
+          Because of this customer face some problems when trying to find the best place to buy something.
+          As an example, customers might have to do some research about different shops that provide the same service
+          to find out best shop that suits them. They might have to visit the websites of each shops and read other
+          users experience with them.
+          When analyzing data that we gathered from a survey, more than 95% of the participants said that they would
+          like an feature which will
+          give them notifications about special offers when they are near a shop.
+        </div>
+        <div id="dlg-footer">
+          <button onclick="ProbOK()">OK</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/Objectives.jpg">
+          <figcaption>
+            <h2>Objectives</h2>
+            <p>Our main objective and other objectives are here!</p>
+            <button class="buttonlearn button2" onclick="showObj()">Learn More..!</button>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <div id="white-background">
+      </div>
+      <div id="ObjBox">
+        <div id="dlg-header">Research Objective</div>
+        <div id="dlg-body">Use Location based offers and promotion system which notify users with offers and promotion
+          relevant to particular
+          shops in shopping complex.Also search option on special offers.Statistical data charts about trending offers
+          of merchant
+          and response of customers against the offers at the end of each month will be offered for merchants.
+        </div>
+        <div id="dlg-footer">
+          <button onclick="ObjOK()">OK</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/methodology.jpg">
+          <figcaption>
+            <h2>Methodology</h2>
+            <p>Systematic plan of the research</p><br>
+            <button class="buttonlearn button2" onclick="showMethodology()">Learn More..!</button>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <div id="white-background">
+      </div>
+      <div id="MethBox">
+        <div id="dlg-header">Methodology</div>
+        <div id="dlg-body">
+          <ul class="text">
+            <li>
+              Search predictions
+              <br><br>
+              The main responsibility of this functions is to provide personalized search suggestions for users by
+              analyzing search history, purchasing patterns of this particular user and users which share similar
+              interests.
+              Data extracted in following ways will be used to improve predictions;
+              <br><br>
+              <div>
+                <ol>
+                  <li>
+                    When registering, users will be provided with a small questionnaire which will help to get an idea
+                    about the interests of the user.
+
+                  </li>
+                  <li>
+                    With the permission of the user, search history data will be collected and will be used with the
+                    algorithm for making search predictions.
+                  </li>
+                  <li>
+                    Users will be given the option to share reviews and experiences with shops and products with other
+                    users.
+                  </li>
+                </ol>
+              </div>
+              <br><br>
+              According to the analyzed data users will be put into target groups for each product category. When
+              searching this will be helpful to give more personalized search result for users.
+              User feedback and ratings also will be considered when providing search results. Search results will be
+              prioritized according to user interest as well as user feedback using ranking algorithms.
+            </li>
+            <br><br>
+            <li>
+              Offers and promotion notifier
+              <br><br>
+              The main functionality of this research component is to notify user with offers and promotion once they
+              are near a shop in a shopping complex based on the seasons and their interest.
+              This predictor will be trained by using data extracted by following ways
+              <br><br>
+              <div>
+                <ol>
+                  <li>
+                    when user get registered with the app the user have to fill an form with some basic questions and
+                    some question related to their interest.
+                  </li>
+                  <li>
+                    through user recent search history
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <br><br>
+            <li>
+              Filter out offers and promotions
+              <br><br>
+              The main functionality of this functions is to identify and filter out offers and promotions from
+              merchantsâ€™ websites or public Facebook pages.
+              Images will be identified using a tool like Web Scraper.
+              Data will be extracted from identified images by modifying existing text extraction methods with machine
+              learning algorithms.
+              A data model will be trained to identify offer related details from extracted data.
+            </li>
+            <br><br>
+            <li>
+              Analyze customerbehaviour
+              <br><br>
+              The main functionality of this function is to analyze customers monthly data on offers and represent those
+              data on statistical chart. monthly data include customers behaviour / Customers interest. statistical data
+              include trending offers , less value offers and so on. And also according to statistical data give
+              recommendations for next month through the mobile application.
+              Following ways are used to analyze customers behaviour
+              <br><br>
+              <div>
+                <ol>
+                  <li>
+                    analyzing previous search history
+                  </li>
+                  <li>
+                    analyzing customers purchasing patterns
+                  </li>
+                  <li>
+                    When customer register to mobile application provide small questions to identify customers interest.
+                  </li>
+                </ol>
+              </div>
+              <br>
+              This will be most helpful to merchants.
+            </li>
+            <br><br>
+            <li>
+              Review analysis
+              <br><br>
+              The main functionality of this function is to analyze customer reviews and give recommendations to
+              merchants for improvement of the shop.
+              Review will be analyzed using suitable NLP and machine learning algorithm.
+            </li>
+          </ul>
+        </div>
+        <div id="dlg-footer">
+          <button onclick="MethOK()">OK</button>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+        <figure>
+          <img class="img-responsive" src="img/technology.jpg">
+
+          <figcaption>
+            <h2>Technology Used</h2>
+            <p>What are the technologies we used for demonstrate?</p><br>
+            <button class="buttonlearn button2" onclick="showTech()">Learn More..!</button>
+          </figcaption>
+          <!--/a-->
+
+
+        </figure>
+      </div>
+
+      <div id="white-background">
+      </div>
+      <div id="TechBox">
+        <div id="dlg-header">Technology Used</div>
+        <div id="dlg-body">• React Native <br>
+          • nodejs<br>
+          • mongoDB <br>
+          • Python <br>
+          • Machine Learning <br>
+          • Deep Learning <br>
+          • Visual studio code <br>
+          • Google colabs <br>
+        </div>
+        <div id="dlg-footer">
+          <button onclick="TechOK()">OK</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Milestones-->
+<section id="milestone">
+  <div class="container">
+    <h1>Milestones</h1>
+    <p class="text">The following steps are used to achieve the goal and the objectives of developing the PromoPal
+      application.
+      The project will be evaluated out of 100 marks to be achieved at the end of the year.And out of the 100 marks
+      different presentages are
+      allocated for each milestone achievement.Team has met the deadlines and produced the relevent documantations and
+      the required presentations of the project.</p>
+    <div class="row">
+      <div class="column">
+        <p class="text">Project Proposal</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:10%">
+            10%
+          </div>
+        </div>
+        <p class="text">SRS Documants</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:6%">
+            6%
+          </div>
+        </div>
+        <p class="text">Progress Presentation 1</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:10%">
+            10%
+          </div>
+        </div>
+        <p class="text">Progress Presentation 2</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:18%">
+            18%
+          </div>
+        </div>
+        <p class="text">Final Assesment</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:10%">
+            10%
+          </div>
+        </div>
+        <p class="text">Viva</p>
+        <div class="progress" style="width:100%">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
+               style="width:15%">
+            15%
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Project Proposal Document</h5>
+            <button class="btn btn-primary" onclick="showProposal()">View Description</button>
+          </div>
+        </div>
+        <div id="white-background">
+        </div>
+        <div id="milestoneproposalBox">
+          <div id="dlg-header">Project Proposal Document</div>
+          <div id="dlg-body">
+            <p>Date of the Assesment : 2019-03-12</p>
+            Project Proposal documant is the initial documant that demarcate the initial requirements of the
+            project activities. These requirements could change over the time. Foolow up of a good project management
+            plan is quite necessary to support the aggressive changes of the requirements. The use of methodologies and
+            PMP are described under the proposal document as well.
+          </div>
+          <div id="dlg-footer">
+            <button onclick="ProposalOK()">OK</button>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">SRS Document</h5>
+            <button class="btn btn-primary" onclick="showSrs()">View Description</button>
+          </div>
+        </div>
+        <div id="milestonesrsBox">
+          <div id="dlg-header">SRS Document</div>
+          <div id="dlg-body">
+            <p>Date of the Assesment : 2019-04-22</p>
+            The purpose of this Software Requirements Specification document is to provide a detailed
+            description of the functionalities of the proposed location-based offer notification mobile application
+            (cross platform).
+            Furthermore, this will explain the features, the interfaces of the system and what will be done by this
+            component of the system.
+            The developers, users and testers could refer this document for their appropriate necessities. This document
+            will support,
+            <br><br>
+            <ul>
+              <li>Developers: To make sure whether they are developing the correct software requirements and
+                specifications proposed in the previous stages.
+              </li>
+
+              <li>Testers: To get the overall idea about functionalities which will be helpful for testing purposes.
+              </li>
+
+              <li>Users: To get confirm whether the mentioned, requirements are included in the software requirements
+                and specifications. Also,
+                this stands as a legal document between users and developers.
+              </li>
+          </div>
+          </ul>
+          <div id="dlg-footer">
+            <button onclick="srsOK()">OK</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Progress Presentation 1</h5>
+            <button class="btn btn-primary" onclick="showprogress1()">View Description</button>
+          </div>
+        </div>
+        <div id="progressBox1">
+          <div id="dlg-header">Progress Presentation 1</div>
+          <div id="dlg-body">
+            <p>Date of the Assesment : 2019-06-18</p>
+            In Progrees Presentation 1 we have to implement our system up to 50% of the final product.
+            It has to be a working product which can be take a better idea about the product that we are going to
+            implement.
+          </div>
+          <div id="dlg-footer">
+            <button onclick="progress1OK()">OK</button>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Progress Presentation 2</h5>
+            <button class="btn btn-primary" onclick="showprogress2()">View Description</button>
+          </div>
+        </div>
+        <div id="progressBox2">
+          <div id="dlg-header">Progress Presentation 2</div>
+          <div id="dlg-body">
+            <p>Date of the Assesment : 2019-09-02</p>
+            In Progrees Presentation 2 we have to implement our system up to 90% of the final product.
+            It has to be a working product which can be take a better idea about the product that we are going to
+            implement.
+          </div>
+          <div id="dlg-footer">
+            <button onclick="progress2OK()">OK</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Final Assesment and Viva</h5>
+            <button class="btn btn-primary" onclick="showFinal()">View Description</button>
+          </div>
+        </div>
+        <div id="finalBox">
+          <div id="dlg-header">Final Assesment and Viva</div>
+          <div id="dlg-body">
+            <p>Date of the Assesment : 2019-11-13</p>
+            Final Presentation evaluates the team on results of the final product. Checks whether the proposed work has
+            been implemented in the final product and works as a unit.
+            In the Viva presentation, the team is evaluated individually on the work they've done including the source
+            code of the system as well as literature survey.
+          </div>
+          <div id="dlg-footer">
+            <button onclick="finalOK()">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<br><br><br><br>
+<!--Documant-->
+<section id="documant">
+  <div class="container">
+    <h1>DOCUMENTS</h1>
+    <table class="table table-hover table-bordered">
+      <tr>
+        <th>Documant Name</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Project Charter</td>
+        <td><a href="Documants/19-081_Project charter.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>Proposal Documant</td>
+        <td><a href="Documants/19-081_Project Proposal Report.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>Group SRS Documant</td>
+        <td><a href="Documants/19-081_SRS.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>SRS Documant 1</td>
+        <td><a href="Documants/IT16113978_SRS.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>SRS Documant 2</td>
+        <td><a href="Documants/IT16139718_SRS.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>SRS Documant 3</td>
+        <td><a href="Documants/IT16139640_SRS.pdf" type="application/pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>SRS Documant 4</td>
+        <td><a href="Documants/IT16072848_SRS.pdf">View</a></td>
+      </tr>
+      <tr>
+        <td>Research Paper</td>
+        <td><a href="#">View</a></td>
+      </tr>
+      <tr>
+        <td>Final Documant 1</td>
+        <td><a href="#">View</a></td>
+      </tr>
+      <tr>
+        <td>Final Documant 2</td>
+        <td><a href="#">View</a></td>
+      </tr>
+      <tr>
+        <td>Final Documant 3</td>
+        <td><a href="#">View</a></td>
+      </tr>
+      <tr>
+        <td>Final Documant 4</td>
+        <td><a href="#">View</a></td>
+      </tr>
+      <tr>
+        <td>Final Documant (Group)</td>
+        <td><a href="#">View</a></td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!--Presentation-->
+<section id="presentation">
+  <div class="container">
+    <h1>Presentations</h1>
+    <div class="row">
+      <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">PromoPal</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Proposal Presentation</h5>
+          <div style="text-align:center">
+            <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
+              <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+            </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">PromoPal</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Progress Presentation 1</h5>
+          <div style="text-align:center">
+            <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
+              <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+            </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">PromoPal</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Progress Presentation2</h5>
+          <div style="text-align:center">
+            <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
+              <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+            </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">PromoPal</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Final Presentation</h5>
+          <div style="text-align:center">
+            <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
+              <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+            </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---about-->
+<section id="team">
+  <div class="container">
+    <h1>Our Team</h1>
+    <div class="row">
+      <div class="col-md-3 profile-pic text-center">
+        <div class="img-box">
+          <img class="img-responsive" src="img/person_03.jpg">
+        </div>
+        <h2>Saluwadana S.M.R.B</h2>
+        <h3>Group Leader</h3>
+      </div>
+      <div class="col-md-3 profile-pic text-center">
+        <div class="img-box">
+          <img class="img-responsive" src="img/madhavi.jpeg">
+        </div>
+        <h2>Jayasinghe L.M.R</h2>
+      </div>
+      <div class="col-md-3 profile-pic text-center">
+        <div class="img-box">
+          <img class="img-responsive" src="img/neminda.jpeg">
+        </div>
+        <h2>Hemachandra K.A.N.W</h2>
+      </div>
+      <div class="col-md-3 profile-pic text-center">
+        <div class="img-box">
+          <img class="img-responsive" src="img/person_04.jpeg">
+        </div>
+        <h2>Ahnaf H.M</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---Get in Touch---->
+<section id="contact">
+  <div class="container">
+    <h1>Get in Touch</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="MAILTO:promopal.research@gmail.com" class="contact-form" enctype="text/plain" method="post">
+          <div class="form-group">
+            <input class="form-control" id="name" name="name" placeholder="Enter your name" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="email" name="email" placeholder="Enter your email" type="email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="message" name="message" placeholder="Enter your Message"
+                      rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" name="submit" type="submit">Submit
+            <button>
+        </form>
+      </div>
+      <div class="col-md-6 contact-info">
+        <div class="follow">
+          <b>Email: </b>
+          <i class="fa fa-envelope-o"></i>
+          promopal.research@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
 </html>
