@@ -3,14 +3,13 @@
 		$n =$_POST['name'];
 		$e =$_POST['email'];
 		$m =$_POST['message'];
-		$to="ravindusaluwadana348@gmail";
-		$subject="Responce from website";
-		$message="I am very thankful to you";
-		$headers="From:ravindusaluwadana348@gmail";
-			
+		$to="englishbuddy.ai@gmail";
+		$subject="Response from website";
+		$message="Thank you";
+		$headers="From:englishbuddy.ai@gmail";
 		if(mail($to,$subject,$message,$headers)){
 			echo "Mail sent";
-		}else{
+		} else {
 			echo "Can not send mail";
 		}
 	}
