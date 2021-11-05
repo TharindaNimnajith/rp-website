@@ -1,1036 +1,593 @@
-<html>
-
+<html lang='en'>
 <head>
-  <title>PromoPal</title>
-  <link href="style.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    function showLit() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("LitBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function litOK() {
-      dlgHide();
-    }
-
-    function dlgHide() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("LitBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showRgap() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("RgapBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 500 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function rgapOK() {
-      dlgHide1();
-    }
-
-    function dlgHide1() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("RgapBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showProb() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("RprobBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function ProbOK() {
-      dlgHide2();
-    }
-
-    function dlgHide2() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("RprobBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showProb() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("RprobBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function ObjOK() {
-      dlgHide3();
-    }
-
-    function dlgHide3() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("ObjBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showObj() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("ObjBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function MethOK() {
-      dlgHide4();
-    }
-
-    function dlgHide4() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("MethBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showMethodology() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("MethBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function TechOK() {
-      dlgHide5();
-    }
-
-    function dlgHide5() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("TechBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showTech() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("TechBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 500 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function ProposalOK() {
-      dlgHide6();
-    }
-
-    function dlgHide6() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("milestoneproposalBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showProposal() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("milestoneproposalBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function srsOK() {
-      dlgHide7();
-    }
-
-    function dlgHide7() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("milestonesrsBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showSrs() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("milestonesrsBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function progress1OK() {
-      dlgHide8();
-    }
-
-    function dlgHide8() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("progressBox1");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showprogress1() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("progressBox1");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function progress2OK() {
-      dlgHide9();
-    }
-
-    function dlgHide9() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("progressBox2");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showprogress2() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("progressBox2");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-    function finalOK() {
-      dlgHide10();
-    }
-
-    function dlgHide10() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("finalBox");
-      whitebg.style.display = "none";
-      dlg.style.display = "none";
-    }
-
-    function showFinal() {
-      var whitebg = document.getElementById("white-background");
-      var dlg = document.getElementById("finalBox");
-      whitebg.style.display = "block";
-      dlg.style.display = "block";
-      var winWidth = window.innerWidth;
-      dlg.style.left = (winWidth / 2) - 800 / 2 + "px";
-      dlg.style.top = "150px";
-    }
-
-  </script>
+  <title>English Buddy</title>
+  <link href='style.css' rel='stylesheet'>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
 </head>
-
 <body>
-  <!---NavigationBar--->
-  <section id="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">PromoPal</a>
-      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-        data-target="#navbarNav" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#domain">PROJECT SCOPE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#milestone">MILESTONES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#documant">DOCUMANTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#presentation">PRESENTATIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT US</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-  <!--slider-->
-  <section>
-    <div id="slider">
-      <div class="carousel slide" data-ride="carousel" id="headerslider">
-        <ol class="carousel-indicators">
-          <li class="active" data-slide-to="0" data-target="#headerslider"></li>
-          <li data-slide-to="1" data-target="#headerslider"></li>
-          <li data-slide-to="2" data-target="#headerslider"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img alt="..." class="d-block w-100" src="img/Promopal_back_01.jpg">
-            <div class="carousel-caption d-none d-md-block">
-              <!--Caption-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img alt="..." class="d-block w-100" src="img/shopping6.jpg">
-            <div class="carousel-caption">
-              <!--Caption-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img alt="..." class="d-block w-100" src="img/back_01.jpg">
-            <div class="carousel-caption">
-              <!--Caption-->
-            </div>
+<section id='nav-bar'>
+  <nav class='navbar navbar-expand-lg navbar-light'>
+    <a class='navbar-brand' href='#'>English Buddy</a>
+    <button aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler'
+            data-target='#navbarNav' data-toggle='collapse' type='button'>
+      <span class='navbar-toggler-icon'></span>
+    </button>
+    <div class='collapse navbar-collapse' id='navbarNav'>
+      <ul class='navbar-nav ml-auto'>
+        <li class='nav-item'>
+          <a class='nav-link' href='#'>HOME</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#domain'>PROJECT SCOPE</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#milestone'>MILESTONES</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#documant'>DOCUMENTS</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#presentation'>PRESENTATIONS</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#team'>ABOUT US</a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' href='#contact'>CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+<section>
+  <div id='slider'>
+    <div class='carousel slide' data-ride='carousel' id='headerslider'>
+      <ol class='carousel-indicators'>
+        <li class='active' data-slide-to='0' data-target='#headerslider'></li>
+        <li data-slide-to='1' data-target='#headerslider'></li>
+        <li data-slide-to='2' data-target='#headerslider'></li>
+      </ol>
+      <img alt='...' class='d-block w-100' src='img/Promopal_back_01.jpg'>
+    </div>
+  </div>
+</section>
+<section id='domain'>
+  <div class='container'>
+    <h1>Project Scope</h1>
+    <div class='row'>
+      <div class='col-md-6 mb-3'>
+        <div class='card' style='width: 100%;'>
+          <img class='card-img-top' src='img/Literature-Reviews.jpg' alt='Card image cap'>
+          <div class='card-body'>
+            <h5 class='card-title'>Literature Review</h5>
+            <p class='card-text'>
+              Since English has become the most widely used language in the world, most people are involved in
+              learning English daily as beginners. With the increasing demand, more research has been conducted on
+              learning English language in the e-learning domain recently with little success...
+            </p>
+            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#literatureReview'>
+              View More
+            </button>
           </div>
         </div>
-        <a class="carousel-control-prev" data-slide="prev" href="#headerslider" role="button">
-          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" data-slide="next" href="#headerslider" role="button">
-          <span aria-hidden="true" class="carousel-control-next-icon"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
+      <div class='col-md-6 mb-3'>
+        <div class='card' style='width: 100%;'>
+          <img class='card-img-top' src='img/problem.jpg' alt='Card image cap'>
+          <div class='card-body'>
+            <h5 class='card-title'>Research Problem</h5>
+            <p class='card-text'>
+              Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
+              educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
+              population above 15 years of age [1]. There are no recommendation...
+            </p>
+            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#ResearchProblem'>
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6'>
+        <div class='card' style='width: 100%;'>
+          <img class='card-img-top' src='img/Objectives.jpg' alt='Card image cap'>
+          <div class='card-body'>
+            <h5 class='card-title'>Objectives</h5>
+            <p class='card-text'>
+            <p>Main Objective: Improving the English speaking and academic writing skills
+              among non-native English speakers worldwide by providing comprehensive training with self-learning
+              techniques to increase the
+              performance...</p>
+            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#Objectives'>
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6'>
+        <div class='card' style='width: 100%;'>
+          <img class='card-img-top' src='img/technology.jpg' alt='Card image cap'>
+          <div class='card-body'>
+            <h5 class='card-title'>Technologies Used</h5>
+            <p class='card-text'>
+            <p>&bull;&nbsp;&nbsp; &nbsp;Python Programming Language<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Natural Language Processing (NLP)<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Natural Language Toolkit (NLTK), Spacy, Gensim<br/>
+              &bull;&nbsp;&nbsp; &nbsp;JavaScript, React.js, and other Web Technologies<br/></p>
+            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#TechnologyUsed'>
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-12 mt-3'>
+        <div class='card' style='width: 100%;'>
+          <div class='card-body'>
+            <h5 class='card-title'>Methodology</h5>
+            <p class='card-body'>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-12 mt-3'>
+        <div class='card' style='width: 100%;'>
+          <div class='card-body'>
+            <h5 class='card-title'>Research Gap</h5>
+            <p class='card-body'>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!--Project Scope-->
-  <section id="domain">
-    <div class="container">
-      <h1>Project Scope</h1>
-
-      <div class="row">
-
-        <div class="col-md-6 mb-3">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/Literature-Reviews.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Literature Review</h5>
-              <p class="card-text">
-                Since English has become the most widely used language in the world, most people are involved in
-                learning English daily as beginners. With the increasing demand, more research has been conducted on
-                learning English language in the e-learning domain recently with little success ...
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#literatureReview">
-                View More
-              </button>
-            </div>
+    <div class='modal fade' id='literatureReview' tabindex='-1' role='dialog' aria-labelledby='literatureReviewLable'
+         aria-hidden='true'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='exampleModalLabel'>Literature Review</h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
           </div>
-        </div>
-
-        <!-- <div class="col-md-4 mb-3">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/gap.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Research Gap</h5>
-              <p class="card-text">
-                Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-                educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
-                population above 15 years of age. There are no recommendation ...
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ResearchGap">
-                View More
-              </button>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-md-6 mb-3">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/problem.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Research Problem</h5>
-              <p class="card-text">
-
-                Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-                educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
-                population above 15 years of age [1]. There are no recommendation ....
-
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ResearchProblem">
-                View More
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/Objectives.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Objectives</h5>
-              <p class="card-text ">
-
-              <p>&bull;&nbsp;&nbsp; &nbsp;Main Objective: Improving the English speaking and academic writing skills
-                among non-native English
-                speakers worldwide by providing comprehensive training with self-learning techniques to increase the
-                performance ...</p>
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Objectives">
-                View More
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-md-4">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/methodology.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Methodology</h5>
-              <p class="card-text">
-
-                Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-                educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s`
-
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Methodology">
-                View More
-              </button>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="col-md-6">
-          <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/technology.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Technology Used</h5>
-              <p class="card-text">
-              <p>&bull;&nbsp;&nbsp; &nbsp;Python Programming Language<br />
-                &bull;&nbsp;&nbsp; &nbsp;Natural Language Processing (NLP)<br />
-                &bull;&nbsp;&nbsp; &nbsp;Natural Language Toolkit (NLTK), Spacy, Gensim<br />
-                &bull;&nbsp;&nbsp; &nbsp;JavaScript, React.js, and other Web Technologies<br /></p>
-              </p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TechnologyUsed">
-                View More
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-sm-12 mt-3">
-          
-          <div class="card" style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title">Methodology</h5>
-              <p class="card-body">
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 mt-3">
-          
-          <div class="card" style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title">Research Gap</h5>
-              <p class="card-body">
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Modal -->
-      <!-- literature Review -->
-      <div class="modal fade" id="literatureReview" tabindex="-1" role="dialog" aria-labelledby="literatureReviewLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">literature Review</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Since English has become the most widely used language in the world, most people are involved in learning
-              English daily as beginners. With the increasing demand, more research has been conducted on learning
-              English language in the e-learning domain recently with little success.
-
-              With the advancement of computer power and multimedia applications, there has been a new interest in
-              Computer-Assisted Pronunciation Teaching (CAPT) applications in recent years. Pronunciation errors could
-              be classified into two main types called phonemic and prosodic errors. Those errors have different
-              features. By extracting those features, software can measure the pronunciation level of a speaker in
-              different ways. Much research is done on pronunciation error detection using these features in various
-              ways. The likelihood-based scoring feature initially used in the 1990s saw the creation of several
-              likelihood-based phoneme-level error detection algorithms. For example, Yoon Kim, Horacio Franco, and
-              Leonardo Neumeyer used log-likelihood scores in forced alignment mode. Expanded versions of
-              likelihood-based scores were also successfully used by Brian Mak et al. Prosodic pronunciation error
-              detection and feedback are very detailed discussions of CAPT systems. Jared Bernstein, Jian Cheng, and
-              Masanori Suzuki have shown that there appears to be a linear relationship between fluency measures and
-              human judgments of proficiency. Pieter Mueller, Febe de Wet, Christa van der Walt, and Thomas Niesler
-              applied phoneme-level log-likelihood scoring to speech from near-native language learners. It was found
-              that the GOP score did not correlate with human ratings. Based on the existing research, there are
-              challenges that need to be overcome to be able to develop a truly useful pronunciation teaching
-              application.
-
-              In the past few years, the e-learning industry grew rapidly. However, current e-learning industry is
-              mainly focused on the content delivered to students. Furthermore, they deliver the same content to every
-              user, whereas, users are different from each other in terms of their strengths and weaknesses. Much
-              research addresses this one-size-fits-all issue. For example, Schiaffino, Garcia, and Amandi proposed an
-              intelligent agent-eTeacher by victimization Bayesian network technique which provides personalized
-              assistance to e-learning students by observing the behavior of the student while he or she is taking
-              online courses and automatically building the student’s profile. Halawa, Hamed, and Shehab proposed a
-              personalized e-learning recommendation model based on the psychological type and learning style model
-              focused on student personality types and the dominant preferences based on the Myers-Briggs Type Indicator
-              (MBTI) theory. Yanni and Ping, the authors of a study on personality learning in e-learning systems have
-              implemented a recommendation engine based on trust value. The intelligent recommendation engine with user
-              interest would help to introduce customized user attraction with the method, according to the
-              above-mentioned values. However, only a limited number of research focuses on user flaws and feedback to
-              incorporate a customized course content recommendation engine.
-
-              Automated essay evaluation is a trending topic at present research. The beginning of automated essay
-              evaluation was found in the works of Page in 1960s. In 1966, Page has proposed Project Essay Grader (PEG)
-              which is a system developed to make the essay evaluation process more practical. PEG system identifies a
-              group of text features and proxies, that are considered approximations of the intrinsic variables of
-              writing quality. However, it is only relying on linguistic features where neither NLP nor lexical content
-              is considered [20, 21]. Intelligent Essay Assessor (IEA) has been developed in the late 1990s, for
-              automated essay evaluation, using Latent Semantic Analysis (LSA). Furthermore, Mahana, Johns, and Apte of
-              Stanford University suggested a solution for automated essay grading with linear regression techniques
-              which evaluated the essays based on different parameters such as dexterity, diction, vocabulary,
-              structure, and organization. Even though there are several pieces of research done on automated essay
-              grading, they consist of many limitations such as lower accuracy, dismissing grammatical and spelling
-              mistakes, and lack of proper feedback.
-
-              The semantic textual similarity is a heavily discussed topic in computational linguistics due to the
-              advancements of AI-based technologies and its heavy usage in multiple domains including the automatic
-              short descriptive answer evaluation process. The difficulty of measuring up to how much the contextual
-              meaning of a text is reflected in another text and the difficulty of accurately computing the semantic
-              textual similarity between two texts are proven in many previously conducted computational linguistics
-              research. Similar study has been conducted on evaluating the paraphrasing of explanation of a graph by
-              Senevirathne, Fernando, White, Divyanjala, Udara Samaratunge, and Dias, where a smart personal intelligent
-              assistant is built for IELTS examination candidates. The above study evaluated the similarity of the
-              sentences using the cosine proximity technique, and Doc2Vec model. The limitation of the sentence
-              similarity module of this system is its low accuracy of 67 percent. Many approaches with BLEU, n-grams,
-              and WordNet based on NLP-based techniques have many shortcomings and limitations such as lower accuracy
-              due to measuring syntactic similarity instead of semantic similarity. Further, in the past few years,
-              there has also been an uptake of expressing ontologies using semantic web languages such as the Web
-              Ontology Language (OWL) for semantic textual similarity evaluation. In conclusion, the majority of
-              research has been conducted by measuring text similarity using various traditional NLP-based methodologies
-              and algorithms for keyword matching. Most of these methods provide less accurate results as they measure
-              the number of matching keywords present in each text and the syntactic similarity, rather than the
-              semantic similarity. Due to the high complexities of linguistics in the English language in general, it is
-              not possible to claim the two texts are similar in meaning just by matching keywords, without trying to
-              understand the overall meaning and semantics of the text. But the state of the art methodologies using
-              deep learning and neural networks try to compare two texts based on their overall meaning and provide a
-              more reliable and accurate similarity evaluation.
-
-              In conclusion, most of these previous research and existing systems have major shortcomings and
-              limitations. Thus, to overcome the above-given limitations the proposed system includes several novel
-              features.
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ResearchGap -->
-      <!-- <div class="modal fade" id="ResearchGap" tabindex="-1" role="dialog" aria-labelledby="ResearchGapLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Research Gap</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-              educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
-              population above 15 years of age [1].
-              There are no recommendation systems for English Language learning applications in Sri Lanka that recommend
-              lessons and activities based on the weaknesses of the particular user in a personalized way [2].
-              Existing solutions do not provide accurate automatic evaluations for speaking and writing activities with
-              subjective answers such as essays and summarizations based on different criteria focused on grading
-              standards used in globally recognized English language examinations [3].
-              [1] A. Abayasekara, "talkingeconomics - Building a More English-Literate Sri Lanka: The Need to Combat
-              Inequities", Ips.lk, 2021. [Online]. Available:
-              https://www.ips.lk/talkingeconomics/2018/04/23/building-a-more-english-literate-sri-lanka-the-need-to-combat-inequities/.
-              [Accessed: 14- Jan- 2021].
-              [2] M. H. Hsu, ‘A personalized English learning recommender system for ESL students’, Expert Syst. Appl.,
-              vol. 34, no. 1, pp. 683–688, Jan. 2008, doi: 10.1016/j.eswa.2006.10.004.
-              [3] "English Language Proficiency Standards ", www.k12.wa.us, 2021. [Online]. Available:
-              https://www.k12.wa.us/sites/default/files/public/migrantbilingual/pubdocs/elp/wa-elp-standards-k12.pdf.
-              [Accessed: 16- Feb- 2021].
-
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- Research Problem -->
-      <div class="modal fade" id="ResearchProblem" tabindex="-1" role="dialog" aria-labelledby="ResearchGapLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Research Problem</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-              educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
-              population above 15 years of age [1].
-              There are no recommendation systems for English Language learning applications in Sri Lanka that recommend
-              lessons and activities based on the weaknesses of the particular user in a personalized way [2].
-              Existing solutions do not provide accurate automatic evaluations for speaking and writing activities with
-              subjective answers such as essays and summarizations based on different criteria focused on grading
-              standards used in globally recognized English language examinations [3].
-              [1] A. Abayasekara, "talkingeconomics - Building a More English-Literate Sri Lanka: The Need to Combat
-              Inequities", Ips.lk, 2021. [Online]. Available:
-              https://www.ips.lk/talkingeconomics/2018/04/23/building-a-more-english-literate-sri-lanka-the-need-to-combat-inequities/.
-              [Accessed: 14- Jan- 2021].
-              [2] M. H. Hsu, ‘A personalized English learning recommender system for ESL students’, Expert Syst. Appl.,
-              vol. 34, no. 1, pp. 683–688, Jan. 2008, doi: 10.1016/j.eswa.2006.10.004.
-              [3] "English Language Proficiency Standards ", www.k12.wa.us, 2021. [Online]. Available:
-              https://www.k12.wa.us/sites/default/files/public/migrantbilingual/pubdocs/elp/wa-elp-standards-k12.pdf.
-              [Accessed: 16- Feb- 2021].
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Objectives -->
-      <div class="modal fade" id="Objectives" tabindex="-1" role="dialog" aria-labelledby="ResearchGapLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Objectives</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body m-3">
-              <ul>
-                <li>Main Objective: Improving the English speaking and academic writing skills among non-native English
-                  speakers worldwide by providing comprehensive training with self-learning techniques to increase the
-                  performance in English language examinations.</li>
-                <li>Sub Objective 1: Using natural language processing and machine learning to find English
-                  pronunciation level and smart calling system to improve students&rsquo; English speaking level</li>
-                <li>Sub Objective 2: Automated English essay activities evaluation process with detecting formality,
-                  fluency, lexical complexity, and spelling/grammatical mistakes</li>
-                <li>Sub Objective 3: Evaluating the relevancy of short descriptive answers by measuring the semantic
-                  similarity between the submitted answer and the marking scheme</li>
-                <li>Sub Objective 4: Personalized lesson and activity recommendations using machine learning</li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Methodology -->
-      <!-- <div class="modal fade" id="Methodology" tabindex="-1" role="dialog" aria-labelledby="ResearchGapLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Objectives</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body ">
-              Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
-              educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
-              population above 15 years of age [1].
-              There are no recommendation systems for English Language learning applications in Sri Lanka that recommend
-              lessons and activities based on the weaknesses of the particular user in a personalized way [2].
-              Existing solutions do not provide accurate automatic evaluations for speaking and writing activities with
-              subjective answers such as essays and summarizations based on different criteria focused on grading
-              standards used in globally recognized English language examinations [3].
-              [1] A. Abayasekara, "talkingeconomics - Building a More English-Literate Sri Lanka: The Need to Combat
-              Inequities", Ips.lk, 2021. [Online]. Available:
-              https://www.ips.lk/talkingeconomics/2018/04/23/building-a-more-english-literate-sri-lanka-the-need-to-combat-inequities/.
-              [Accessed: 14- Jan- 2021].
-              [2] M. H. Hsu, ‘A personalized English learning recommender system for ESL students’, Expert Syst. Appl.,
-              vol. 34, no. 1, pp. 683–688, Jan. 2008, doi: 10.1016/j.eswa.2006.10.004.
-              [3] "English Language Proficiency Standards ", www.k12.wa.us, 2021. [Online]. Available:
-              https://www.k12.wa.us/sites/default/files/public/migrantbilingual/pubdocs/elp/wa-elp-standards-k12.pdf.
-              [Accessed: 16- Feb- 2021].
-
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- Technology Used -->
-      <div class="modal fade" id="TechnologyUsed" tabindex="-1" role="dialog" aria-labelledby="ResearchGapLable"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Objectives</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>&bull;&nbsp;&nbsp; &nbsp;Python Programming Language<br />
-                &bull;&nbsp;&nbsp; &nbsp;Natural Language Processing (NLP)<br />
-                &bull;&nbsp;&nbsp; &nbsp;Natural Language Toolkit (NLTK), Spacy, Gensim<br />
-                &bull;&nbsp;&nbsp; &nbsp;JavaScript, React.js, and other Web Technologies<br />
-                &bull;&nbsp;&nbsp; &nbsp;Microsoft SQL Server<br />
-                &bull;&nbsp;&nbsp; &nbsp;Machine Learning<br />
-                &bull;&nbsp;&nbsp; &nbsp;Linear Regression<br />
-                &bull;&nbsp;&nbsp; &nbsp;Deep Learning and Neural Networks<br />
-                &bull;&nbsp;&nbsp; &nbsp;Automatic Speech Recognition (ASR)<br />
-                &bull;&nbsp;&nbsp; &nbsp;Text to Speech (TTS)<br />
-                &bull;&nbsp;&nbsp; &nbsp;C# Programming Language and .NET Core Framework<br />
-                &bull;&nbsp;&nbsp; &nbsp;WebStorm, PyCharm and Visual Studio IDEs<br />
-                &bull;&nbsp;&nbsp; &nbsp;Anaconda Navigator and Jupyter Notebook<br />
-                &bull;&nbsp;&nbsp; &nbsp;Microsoft Azure Devops Project Management Tools, Git</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!--Milestones-->
-      <section id="milestone">
-        <div class="container mt-5">
-          <h1>Milestones</h1>
-          <p class="text">The following steps are used to achieve the goal and the objectives of developing the PromoPal
+          <div class='modal-body'>
+            Since English has become the most widely used language in the world, most people are involved in learning
+            English daily as beginners. With the increasing demand, more research has been conducted on learning
+            English language in the e-learning domain recently with little success.
+            With the advancement of computer power and multimedia applications, there has been a new interest in
+            Computer-Assisted Pronunciation Teaching (CAPT) applications in recent years. Pronunciation errors could
+            be classified into two main types called phonemic and prosodic errors. Those errors have different
+            features. By extracting those features, software can measure the pronunciation level of a speaker in
+            different ways. Much research is done on pronunciation error detection using these features in various
+            ways. The likelihood-based scoring feature initially used in the 1990s saw the creation of several
+            likelihood-based phoneme-level error detection algorithms. For example, Yoon Kim, Horacio Franco, and
+            Leonardo Neumeyer used log-likelihood scores in forced alignment mode. Expanded versions of
+            likelihood-based scores were also successfully used by Brian Mak et al. Prosodic pronunciation error
+            detection and feedback are very detailed discussions of CAPT systems. Jared Bernstein, Jian Cheng, and
+            Masanori Suzuki have shown that there appears to be a linear relationship between fluency measures and
+            human judgments of proficiency. Pieter Mueller, Febe de Wet, Christa van der Walt, and Thomas Niesler
+            applied phoneme-level log-likelihood scoring to speech from near-native language learners. It was found
+            that the GOP score did not correlate with human ratings. Based on the existing research, there are
+            challenges that need to be overcome to be able to develop a truly useful pronunciation teaching
             application.
-            The project will be evaluated out of 100 marks to be achieved at the end of the year.And out of the 100
-            marks
-            different presentages are
-            allocated for each milestone achievement.Team has met the deadlines and produced the relevent documantations
-            and
-            the required presentations of the project.</p>
-          <div class="row">
-            <div class="col-12">
-
-              <div class="mb-2 mt-2 d-flex justify-content-between">
-                <div>Project Proposal</div>
-                <div><b>08-03-2021</b></div>
-              </div>
-
-              <div class="progress" style="width:100%">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
-                  style="width:12%">
-                  12%
-                </div>
-              </div>
-
-              <div class="mb-2 mt-4 d-flex justify-content-between">
-                <div>Progress Presentation 1</div>
-                <div><b>05-07-2021</b></div>
-              </div>
-              <div class="progress" style="width:100%">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
-                  style="width:15%">
-                  15%
-                </div>
-              </div>
-
-              <div class="mb-2 mt-4 d-flex justify-content-between">
-                <div>Progress Presentation 2</div>
-                <div><b>14-10-2021</b></div>
-              </div>
-              <div class="progress" style="width:100%">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
-                  style="width:18%">
-                  18%
-                </div>
-              </div>
-
-              <div class="mb-2 mt-4 d-flex justify-content-between">
-                <div>Final Presentation</div>
-                <div><b>22-11-2021</b></div>
-              </div>
-              <div class="progress" style="width:100%">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
-                  style="width:10%">
-                  10%
-                </div>
-              </div>
-
-              <div class="mb-2 mt-4 d-flex justify-content-between">
-                <div>Final Viva</div>
-                <div><b>22-11-2021</b></div>
-              </div>
-              <div class="progress" style="width:100%">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar"
-                  style="width:15%">
-                  15%
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-12 mt-5">
-
-              <img src="img/milestone.png" alt="milestone" class="img-fluid">
-
-
-
-
-            </div>
-
-
-          </div>
-      </section>
-      <br><br><br><br>
-
-      <!--Documant-->
-      <section id="documant">
-        <div class="container">
-          <h1>DOCUMENTS</h1>
-          <table class="table table-hover table-bordered">
-            <tr>
-              <th>Documant Name</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>Project Charter</td>
-              <td><a href="Documants/19-081_Project charter.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>Proposal Documant</td>
-              <td><a href="Documants/19-081_Project Proposal Report.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>Group SRS Documant</td>
-              <td><a href="Documants/19-081_SRS.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>SRS Documant 1</td>
-              <td><a href="Documants/IT16113978_SRS.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>SRS Documant 2</td>
-              <td><a href="Documants/IT16139718_SRS.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>SRS Documant 3</td>
-              <td><a href="Documants/IT16139640_SRS.pdf" type="application/pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>SRS Documant 4</td>
-              <td><a href="Documants/IT16072848_SRS.pdf">View</a></td>
-            </tr>
-            <tr>
-              <td>Research Paper</td>
-              <td><a href="#">View</a></td>
-            </tr>
-            <tr>
-              <td>Final Documant 1</td>
-              <td><a href="#">View</a></td>
-            </tr>
-            <tr>
-              <td>Final Documant 2</td>
-              <td><a href="#">View</a></td>
-            </tr>
-            <tr>
-              <td>Final Documant 3</td>
-              <td><a href="#">View</a></td>
-            </tr>
-            <tr>
-              <td>Final Documant 4</td>
-              <td><a href="#">View</a></td>
-            </tr>
-            <tr>
-              <td>Final Documant (Group)</td>
-              <td><a href="#">View</a></td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <!--Presentation-->
-      <section id="presentation">
-        <div class="container">
-          <h1>Presentations</h1>
-          <div class="row">
-            <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">PromoPal</div>
-              <div class="card-body text-primary">
-                <h5 class="card-title">Proposal Presentation</h5>
-                <div style="text-align:center">
-                  <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
-                      <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
-                    </a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">PromoPal</div>
-              <div class="card-body text-primary">
-                <h5 class="card-title">Progress Presentation 1</h5>
-                <div style="text-align:center">
-                  <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
-                      <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
-                    </a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">PromoPal</div>
-              <div class="card-body text-primary">
-                <h5 class="card-title">Progress Presentation2</h5>
-                <div style="text-align:center">
-                  <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
-                      <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
-                    </a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 card border-primary mb-3" style="max-width: 18rem;">
-              <div class="card-header">PromoPal</div>
-              <div class="card-body text-primary">
-                <h5 class="card-title">Final Presentation</h5>
-                <div style="text-align:center">
-                  <p class="card-text"><a download href="presentations/Customer Tracking System.pptx">
-                      <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
-                    </a></p>
-                </div>
-              </div>
-            </div>
+            In the past few years, the e-learning industry grew rapidly. However, current e-learning industry is
+            mainly focused on the content delivered to students. Furthermore, they deliver the same content to every
+            user, whereas, users are different from each other in terms of their strengths and weaknesses. Much
+            research addresses this one-size-fits-all issue. For example, Schiaffino, Garcia, and Amandi proposed an
+            intelligent agent-eTeacher by victimization Bayesian network technique which provides personalized
+            assistance to e-learning students by observing the behavior of the student while he or she is taking
+            online courses and automatically building the student’s profile. Halawa, Hamed, and Shehab proposed a
+            personalized e-learning recommendation model based on the psychological type and learning style model
+            focused on student personality types and the dominant preferences based on the Myers-Briggs Type Indicator
+            (MBTI) theory. Yanni and Ping, the authors of a study on personality learning in e-learning systems have
+            implemented a recommendation engine based on trust value. The intelligent recommendation engine with user
+            interest would help to introduce customized user attraction with the method, according to the
+            above-mentioned values. However, only a limited number of research focuses on user flaws and feedback to
+            incorporate a customized course content recommendation engine.
+            Automated essay evaluation is a trending topic at present research. The beginning of automated essay
+            evaluation was found in the works of Page in 1960s. In 1966, Page has proposed Project Essay Grader (PEG)
+            which is a system developed to make the essay evaluation process more practical. PEG system identifies a
+            group of text features and proxies, that are considered approximations of the intrinsic variables of
+            writing quality. However, it is only relying on linguistic features where neither NLP nor lexical content
+            is considered [20, 21]. Intelligent Essay Assessor (IEA) has been developed in the late 1990s, for
+            automated essay evaluation, using Latent Semantic Analysis (LSA). Furthermore, Mahana, Johns, and Apte of
+            Stanford University suggested a solution for automated essay grading with linear regression techniques
+            which evaluated the essays based on different parameters such as dexterity, diction, vocabulary,
+            structure, and organization. Even though there are several pieces of research done on automated essay
+            grading, they consist of many limitations such as lower accuracy, dismissing grammatical and spelling
+            mistakes, and lack of proper feedback.
+            The semantic textual similarity is a heavily discussed topic in computational linguistics due to the
+            advancements of AI-based technologies and its heavy usage in multiple domains including the automatic
+            short descriptive answer evaluation process. The difficulty of measuring up to how much the contextual
+            meaning of a text is reflected in another text and the difficulty of accurately computing the semantic
+            textual similarity between two texts are proven in many previously conducted computational linguistics
+            research. Similar study has been conducted on evaluating the paraphrasing of explanation of a graph by
+            Senevirathne, Fernando, White, Divyanjala, Udara Samaratunge, and Dias, where a smart personal intelligent
+            assistant is built for IELTS examination candidates. The above study evaluated the similarity of the
+            sentences using the cosine proximity technique, and Doc2Vec model. The limitation of the sentence
+            similarity module of this system is its low accuracy of 67 percent. Many approaches with BLEU, n-grams,
+            and WordNet based on NLP-based techniques have many shortcomings and limitations such as lower accuracy
+            due to measuring syntactic similarity instead of semantic similarity. Further, in the past few years,
+            there has also been an uptake of expressing ontologies using semantic web languages such as the Web
+            Ontology Language (OWL) for semantic textual similarity evaluation. In conclusion, the majority of
+            research has been conducted by measuring text similarity using various traditional NLP-based methodologies
+            and algorithms for keyword matching. Most of these methods provide less accurate results as they measure
+            the number of matching keywords present in each text and the syntactic similarity, rather than the
+            semantic similarity. Due to the high complexities of linguistics in the English language in general, it is
+            not possible to claim the two texts are similar in meaning just by matching keywords, without trying to
+            understand the overall meaning and semantics of the text. But the state of the art methodologies using
+            deep learning and neural networks try to compare two texts based on their overall meaning and provide a
+            more reliable and accurate similarity evaluation.
+            In conclusion, most of these previous research and existing systems have major shortcomings and
+            limitations. Thus, to overcome the above-given limitations the proposed system includes several novel
+            features.
           </div>
         </div>
-      </section>
-
-      <!---about us-->
-      <section id="team">
-        <div class="container">
-          <h1>About Us</h1>
-          <div class="row">
-            <div class="col-md-3 profile-pic text-center">
-
+      </div>
+    </div>
+    <div class='modal fade' id='ResearchProblem' tabindex='-1' role='dialog' aria-labelledby='ResearchGapLable'
+         aria-hidden='true'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='exampleModalLabel'>Research Problem</h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body'>
+            Most Sri Lankans struggle with English examinations to reach expected grades that are required for their
+            educational and career goals. The English Language literacy in Sri Lanka is just 22% among Sri Lanka’s
+            population above 15 years of age [1].
+            There are no recommendation systems for English Language learning applications in Sri Lanka that recommend
+            lessons and activities based on the weaknesses of the particular user in a personalized way [2].
+            Existing solutions do not provide accurate automatic evaluations for speaking and writing activities with
+            subjective answers such as essays and summarizations based on different criteria focused on grading
+            standards used in globally recognized English language examinations [3].
+            [1] A. Abayasekara, 'talkingeconomics - Building a More English-Literate Sri Lanka: The Need to Combat
+            Inequities', Ips.lk, 2021. [Online]. Available:
+            https://www.ips.lk/talkingeconomics/2018/04/23/building-a-more-english-literate-sri-lanka-the-need-to-combat-inequities/.
+            [Accessed: 14- Jan- 2021].
+            [2] M. H. Hsu, ‘A personalized English learning recommender system for ESL students’, Expert Syst. Appl.,
+            vol. 34, no. 1, pp. 683–688, Jan. 2008, doi: 10.1016/j.eswa.2006.10.004.
+            [3] 'English Language Proficiency Standards ', www.k12.wa.us, 2021. [Online]. Available:
+            https://www.k12.wa.us/sites/default/files/public/migrantbilingual/pubdocs/elp/wa-elp-standards-k12.pdf.
+            [Accessed: 16- Feb- 2021].
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='Objectives' tabindex='-1' role='dialog' aria-labelledby='ResearchGapLable'
+         aria-hidden='true'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='exampleModalLabel'>Objectives</h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body m-3'>
+            <ul>
+              <li>Main Objective: Improving the English speaking and academic writing skills among non-native English
+                speakers worldwide by providing comprehensive training with self-learning techniques to increase the
+                performance in English language examinations.
+              </li>
+              <li>Sub Objective 1: Using natural language processing and machine learning to find English
+                pronunciation level and smart calling system to improve students&rsquo; English speaking level
+              </li>
+              <li>Sub Objective 2: Automated English essay activities evaluation process with detecting formality,
+                fluency, lexical complexity, and spelling/grammatical mistakes
+              </li>
+              <li>Sub Objective 3: Evaluating the relevancy of short descriptive answers by measuring the semantic
+                similarity between the submitted answer and the marking scheme
+              </li>
+              <li>Sub Objective 4: Personalized lesson and activity recommendations using machine learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='TechnologyUsed' tabindex='-1' role='dialog' aria-labelledby='ResearchGapLable'
+         aria-hidden='true'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <h5 class='modal-title' id='exampleModalLabel'>Objectives</h5>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div class='modal-body'>
+            <p>&bull;&nbsp;&nbsp; &nbsp;Python Programming Language<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Natural Language Processing (NLP)<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Natural Language Toolkit (NLTK), Spacy, Gensim<br/>
+              &bull;&nbsp;&nbsp; &nbsp;JavaScript, React.js, and other Web Technologies<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Microsoft SQL Server<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Machine Learning<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Linear Regression<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Deep Learning and Neural Networks<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Automatic Speech Recognition (ASR)<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Text to Speech (TTS)<br/>
+              &bull;&nbsp;&nbsp; &nbsp;C# Programming Language and .NET Core Framework<br/>
+              &bull;&nbsp;&nbsp; &nbsp;WebStorm, PyCharm and Visual Studio IDEs<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Anaconda Navigator and Jupyter Notebook<br/>
+              &bull;&nbsp;&nbsp; &nbsp;Microsoft Azure Devops Project Management Tools, Git</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id='milestone'>
+      <div class='container mt-5'>
+        <h1>Milestones</h1>
+        <div class='row'>
+          <div class='col-12'>
+            <div class='mb-2 mt-2 d-flex justify-content-between'>
+              <div>Project Proposal</div>
+              <div><b>08-03-2021</b></div>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p6.jpg">
+            <div class='progress' style='width:100%'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar'
+                   style='width:12%'>
+                12%
               </div>
-              <h2>Dr. Anuradha Karunasena</h2>
-              <h3>Supervisor</h3>
-              <p>anuradha.k@sliit.lk</p>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p4.jpg">
+            <div class='mb-2 mt-4 d-flex justify-content-between'>
+              <div>Progress Presentation 1</div>
+              <div><b>05-07-2021</b></div>
+            </div>
+            <div class='progress' style='width:100%'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar'
+                   style='width:15%'>
+                15%
               </div>
-              <h2>Dr. Dharshana Kasthurirathna</h2>
-              <h3>Co-Supervisor</h3>
-              <p>dharshana.k@sliit.lk</p>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-
+            <div class='mb-2 mt-4 d-flex justify-content-between'>
+              <div>Progress Presentation 2</div>
+              <div><b>14-10-2021</b></div>
+            </div>
+            <div class='progress' style='width:100%'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar'
+                   style='width:18%'>
+                18%
+              </div>
+            </div>
+            <div class='mb-2 mt-4 d-flex justify-content-between'>
+              <div>Final Presentation</div>
+              <div><b>22-11-2021</b></div>
+            </div>
+            <div class='progress' style='width:100%'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar'
+                   style='width:10%'>
+                10%
+              </div>
+            </div>
+            <div class='mb-2 mt-4 d-flex justify-content-between'>
+              <div>Final Viva</div>
+              <div><b>22-11-2021</b></div>
+            </div>
+            <div class='progress' style='width:100%'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar'
+                   style='width:15%'>
+                15%
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p1.png">
+          <div class='col-12 mt-5'>
+            <img src='img/milestone.png' alt='milestone' class='img-fluid'>
+          </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <section id='documant'>
+      <div class='container'>
+        <h1>DOCUMENTS</h1>
+        <table class='table table-hover table-bordered'>
+          <tr>
+            <th>Documant Name</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Project Charter</td>
+            <td><a href='Documants/19-081_Project charter.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>Proposal Documant</td>
+            <td><a href='Documants/19-081_Project Proposal Report.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>Group SRS Documant</td>
+            <td><a href='Documants/19-081_SRS.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>SRS Documant 1</td>
+            <td><a href='Documants/IT16113978_SRS.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>SRS Documant 2</td>
+            <td><a href='Documants/IT16139718_SRS.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>SRS Documant 3</td>
+            <td><a href='Documants/IT16139640_SRS.pdf' type='application/pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>SRS Documant 4</td>
+            <td><a href='Documants/IT16072848_SRS.pdf'>View</a></td>
+          </tr>
+          <tr>
+            <td>Research Paper</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+          <tr>
+            <td>Final Documant 1</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+          <tr>
+            <td>Final Documant 2</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+          <tr>
+            <td>Final Documant 3</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+          <tr>
+            <td>Final Documant 4</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+          <tr>
+            <td>Final Documant (Group)</td>
+            <td><a href='#'>View</a></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!--Presentation-->
+    <section id='presentation'>
+      <div class='container'>
+        <h1>Presentations</h1>
+        <div class='row'>
+          <div class='col-md-3 card border-primary mb-3' style='max-width: 18rem;'>
+            <div class='card-header'>PromoPal</div>
+            <div class='card-body text-primary'>
+              <h5 class='card-title'>Proposal Presentation</h5>
+              <div style='text-align:center'>
+                <p class='card-text'><a download href='presentations/Customer Tracking System.pptx'>
+                  <button class='btn btn-primary'><i class='fa fa-download'></i> Download</button>
+                </a></p>
               </div>
-              <h2>Jeewantha H. C. R</h2>
-              <h3>Group Leader</h3>
-              <p>it18151220@my.sliit.lk</p>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p2.jpg">
+          </div>
+          <div class='col-md-3 card border-primary mb-3' style='max-width: 18rem;'>
+            <div class='card-header'>PromoPal</div>
+            <div class='card-body text-primary'>
+              <h5 class='card-title'>Progress Presentation 1</h5>
+              <div style='text-align:center'>
+                <p class='card-text'><a download href='presentations/Customer Tracking System.pptx'>
+                  <button class='btn btn-primary'><i class='fa fa-download'></i> Download</button>
+                </a></p>
               </div>
-              <h2>Rajapaksha T. N</h2>
-              <p>it18149654@my.sliit.lk</p>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p3.png">
+          </div>
+          <div class='col-md-3 card border-primary mb-3' style='max-width: 18rem;'>
+            <div class='card-header'>PromoPal</div>
+            <div class='card-body text-primary'>
+              <h5 class='card-title'>Progress Presentation2</h5>
+              <div style='text-align:center'>
+                <p class='card-text'><a download href='presentations/Customer Tracking System.pptx'>
+                  <button class='btn btn-primary'><i class='fa fa-download'></i> Download</button>
+                </a></p>
               </div>
-              <h2>Gajasinghe A. N</h2>
-              <p>it18153682@my.sliit.lk</p>
             </div>
-            <div class="col-md-3 profile-pic text-center">
-              <div class="img-box">
-                <img class="img-responsive" src="img/p4.png">
+          </div>
+          <div class='col-md-3 card border-primary mb-3' style='max-width: 18rem;'>
+            <div class='card-header'>PromoPal</div>
+            <div class='card-body text-primary'>
+              <h5 class='card-title'>Final Presentation</h5>
+              <div style='text-align:center'>
+                <p class='card-text'><a download href='presentations/Customer Tracking System.pptx'>
+                  <button class='btn btn-primary'><i class='fa fa-download'></i> Download</button>
+                </a></p>
               </div>
-              <h2>Naidabadu N. I</h2>
-              <p>it18148350@my.sliit.lk</p>
             </div>
           </div>
         </div>
-      </section>
-      <!---Get in Touch---->
-      <section id="contact">
-        <div class="container">
-          <h1>Get in Touch</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <form action="MAILTO:promopal.research@gmail.com" class="contact-form" enctype="text/plain" method="post">
-                <div class="form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Enter your name" type="text">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Enter your email" type="email">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="message" name="message" placeholder="Enter your Message"
-                    rows="4"></textarea>
-                </div>
-                <button class="btn btn-primary" name="submit" type="submit">Submit
-                  <button>
-              </form>
+      </div>
+    </section>
+
+    <!---about us-->
+    <section id='team'>
+      <div class='container'>
+        <h1>About Us</h1>
+        <div class='row'>
+          <div class='col-md-3 profile-pic text-center'>
+
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p6.jpg'>
             </div>
-            <div class="col-md-6 contact-info">
-              <div class="follow">
-                <b>Email: </b>
-                <i class="fa fa-envelope-o"></i>
-                promopal.research@gmail.com
+            <h2>Dr. Anuradha Karunasena</h2>
+            <h3>Supervisor</h3>
+            <p>anuradha.k@sliit.lk</p>
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p4.jpg'>
+            </div>
+            <h2>Dr. Dharshana Kasthurirathna</h2>
+            <h3>Co-Supervisor</h3>
+            <p>dharshana.k@sliit.lk</p>
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p1.png'>
+            </div>
+            <h2>Jeewantha H. C. R</h2>
+            <h3>Group Leader</h3>
+            <p>it18151220@my.sliit.lk</p>
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p2.jpg'>
+            </div>
+            <h2>Rajapaksha T. N</h2>
+            <p>it18149654@my.sliit.lk</p>
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p3.png'>
+            </div>
+            <h2>Gajasinghe A. N</h2>
+            <p>it18153682@my.sliit.lk</p>
+          </div>
+          <div class='col-md-3 profile-pic text-center'>
+            <div class='img-box'>
+              <img class='img-responsive' src='img/p4.png'>
+            </div>
+            <h2>Naidabadu N. I</h2>
+            <p>it18148350@my.sliit.lk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---Get in Touch---->
+    <section id='contact'>
+      <div class='container'>
+        <h1>Get in Touch</h1>
+        <div class='row'>
+          <div class='col-md-6'>
+            <form action='MAILTO:promopal.research@gmail.com' class='contact-form' enctype='text/plain' method='post'>
+              <div class='form-group'>
+                <input class='form-control' id='name' name='name' placeholder='Enter your name' type='text'>
               </div>
+              <div class='form-group'>
+                <input class='form-control' id='email' name='email' placeholder='Enter your email' type='email'>
+              </div>
+              <div class='form-group'>
+                  <textarea class='form-control' id='message' name='message' placeholder='Enter your Message'
+                            rows='4'></textarea>
+              </div>
+              <button class='btn btn-primary' name='submit' type='submit'>Submit
+                <button>
+            </form>
+          </div>
+          <div class='col-md-6 contact-info'>
+            <div class='follow'>
+              <b>Email: </b>
+              <i class='fa fa-envelope-o'></i>
+              promopal.research@gmail.com
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 </body>
 
 </html>
